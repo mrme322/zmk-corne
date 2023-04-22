@@ -24,7 +24,7 @@
 // |ESC(1)|  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // |TAB(S)|  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
-//                    | WIN | ALT |LYR2 |   |SB(3)|ENT(4)|MN(5)|
+//                    | WIN | ALT |LY(1)|   |SB(3)|ENT(4)|MN(5)|
 // --------------------------------------------------------------------------------
 
 
@@ -33,13 +33,13 @@
    &mt LSHIFT TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LSHFT
 //                &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
-                  &kp LGUI &mo LAYERESC &kp SPACE   &kp SPACE &kp RET &kp RALT
+                  &kp LGUI &kp LALT &mo  1   &kp SPACE &kp RET &kp RALT
                         >;
                 };
 
 
 
-                LAYERESC_layer {
+                LAYERESC {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
