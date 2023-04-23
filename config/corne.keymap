@@ -24,7 +24,7 @@
 //                    -------------------         -------------------
 
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp ESC   &none &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &mt LSHIFT TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LSHFT
                   &kp LGUI &kp LALT &mo  1   &kp SPACE &kp RET &kp RALT
@@ -35,7 +35,7 @@
 //LAYERESCT BEGIN
                 LAYERESC {
 // --------------------------------------         --------------------------------------
-// |      | F1  | F2  | F3  | F4  |     |         |     |     |     |     |     |      |
+// |      | F1  | F2  | F3  | F4  |     |         |     |     |     |     |     | ADJT |
 // --------------------------------------         --------------------------------------
 // | SHFT | F5  | F6  | F7  | F8  |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
@@ -75,13 +75,13 @@
 //LAYERSPACE BEGIN
                 LAYERSPACE {
 // --------------------------------------         --------------------------------------
-// |      |     | PU  |  ↑  | PD  | MUTE|         |     |     |     |     |     | BKSP |
+// |      |     |     |     |     |     |         |  =  |  7  |  8  |  9  |  +  | BKSP |
 // --------------------------------------         --------------------------------------
-// | SHFT | HOME|  ←  |  ↓  |  →  | END |         |     |     |     |     |     | DEL  |
+// |      |     |     |     |     |     |         |  /  |  4  |  5  |  6  |  -  | DEL  |
 // --------------------------------------         --------------------------------------
-// | CTRL | VD  | PREV| PP  | NEXT| VU  |         |     |     |     |     |     | SHFT |
+// |      |     |     |     |     |     |         |  0  |  1  |  2  |  3  |  *  | RET  |
 // --------------------------------------         --------------------------------------
-//                    |     |     |     |         |     |     |     |
+//                    |     |     |     |         |     |  .  |     |
 //                    -------------------         -------------------
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
@@ -94,11 +94,15 @@
 
 //LAYERENT BEGIN
                 LAYERENT {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// --------------------------------------         --------------------------------------
+// |      |  !  |  @  |  #  |  $  |  %  |         |  =  |  `  |  (  |  )  |  +  | BKSP |
+// --------------------------------------         --------------------------------------
+// |      |     |     |     |     |     |         |  \  |  ~  |  [  |  ]  |  -  | DEL  |
+// --------------------------------------         --------------------------------------
+// |      |     |     |     |     |     |         |  |  |  _  |  {  |  }  |  *  |      |
+// --------------------------------------         --------------------------------------
+//                    |     |     |     |         |     |     |     |
+//                    -------------------         -------------------
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
@@ -111,11 +115,11 @@
 //LAYERSMENU BEGIN
                 LAYERSMENU {
 // --------------------------------------         --------------------------------------
-// |      |     | PU  |  ↑  | PD  | MUTE|         |     |     |     |     |     | BKSP |
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
-// | SHFT | HOME|  ←  |  ↓  |  →  | END |         |     |     |     |     |     | DEL  |
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
-// | CTRL | VD  | PREV| PP  | NEXT| VU  |         |     |     |     |     |     | SHFT |
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
 //                    |     |     |     |         |     |     |     |
 //                    -------------------         -------------------
@@ -131,17 +135,17 @@
 //LAYERSADJUST BEGIN
                 LAYERSADJUST {
 // --------------------------------------         --------------------------------------
-// |      |     | PU  |  ↑  | PD  | MUTE|         |     |     |     |     |     | BKSP |
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
-// | SHFT | HOME|  ←  |  ↓  |  →  | END |         |     |     |     |     |     | DEL  |
+// | BT_C | BT0 | BT1 | BT2 | BT3 | BT4 |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
-// | CTRL | VD  | PREV| PP  | NEXT| VU  |         |     |     |     |     |     | SHFT |
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
 //                    |     |     |     |         |     |     |     |
 //                    -------------------         -------------------
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
