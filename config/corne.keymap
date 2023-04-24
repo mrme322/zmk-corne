@@ -9,9 +9,7 @@
 
 / {
         keymap {
-                compatible = "zmk,keymap,behavior-hold-tap";
-
-
+                compatible = "zmk,keymap";
 
 //LAYERDEFAULT BEGIN
                 default_layer {
