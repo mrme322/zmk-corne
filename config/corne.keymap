@@ -56,19 +56,19 @@
 //LAYERSPACEANDTAB BEGIN
                 LAYERSPACE {
 // --------------------------------------         --------------------------------------
-// |      |     | PU  |  ↑  | PD  | MUTE|         |  =  |  7  |  8  |  9  |  +  | BKSP |
+// |      |     | PU  |  ↑  | PD  | MUTE|         |  +  |  7  |  8  |  9  |  *  | BKSP |
 // --------------------------------------         --------------------------------------
-// | SHFT | HOME|  ←  |  ↓  |  →  | END |         |  /  |  4  |  5  |  6  |  -  | DEL  |
+// | SHFT | HOME|  ←  |  ↓  |  →  | END |         |  -  |  4  |  5  |  6  |  /  | DEL  |
 // --------------------------------------         --------------------------------------
-// | CTRL | VD  | PREV| PP  | NEXT| VU  |         |  0  |  1  |  2  |  3  |  *  | RET  |
+// | CTRL | VD  | PREV| PP  | NEXT| VU  |         |  0  |  1  |  2  |  3  |  =  | RET  |
 // --------------------------------------         --------------------------------------
 //                    |     |     | SPC |         | SPC |  .  |     |
 //                    -------------------         -------------------
                         bindings = <
-   &none      &none         &kp PG_UP    &kp UP     &kp PG_DN     &kp C_MUTE          &kp EQUAL      &kp N7      &kp N8 &kp N9   &kp PLUS  &kp BSPC
-   &kp LSHIFT &kp HOME      &kp LEFT     &kp DOWN   &kp RIGHT     &kp END             &kp KP_SLASH   &kp N4      &kp N5 &kp N6   &kp MINUS &kp DEL
-   &kp LCTRL  &kp C_VOL_DN  &kp C_PREV   &kp C_PP   &kp C_NEXT    &kp C_VOL_UP        &kp N0         &kp N1      &kp N2 &kp N3   &kp STAR  &kp RET
-                                         &none      &none         &kp SPACE           &kp SPACE      &kp KP_DOT  &none
+   &none      &none         &kp PG_UP    &kp UP     &kp PG_DN     &kp C_MUTE              &kp PLUS       &kp N7      &kp N8   &kp N9   &kp STAR     &kp BSPC
+   &kp LSHIFT &kp HOME      &kp LEFT     &kp DOWN   &kp RIGHT     &kp END                 &kp MINUS      &kp N4      &kp N5   &kp N6   &kp KP_SLASH &kp DEL
+   &kp LCTRL  &kp C_VOL_DN  &kp C_PREV   &kp C_PP   &kp C_NEXT    &kp C_VOL_UP            &kp N0         &kp N1      &kp N2   &kp N3   &kp EQUAL    &kp RET
+                                         &none      &none         &kp SPACE               &kp SPACE      &kp KP_DOT  &none
                         >;
 
                 };
@@ -77,18 +77,18 @@
 //LAYERENT BEGIN
                 LAYERENT {
 // --------------------------------------         --------------------------------------
-// |      |  !  |  @  |  #  |  $  |  %  |         |  =  |  `  |  (  |  )  |  +  | BKSP |
+// |      |  !  |  @  |  #  |  $  |  %  |         |  +  |  `  |  (  |  )  |  *  | BKSP |
 // --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |  \  |  ~  |  [  |  ]  |  -  | DEL  |
+// |      |     |     |     |     |     |         |  -  |  ~  |  [  |  ]  |  \  | DEL  |
 // --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |  |  |  _  |  {  |  }  |  *  |      |
+// |      |     |     |     |     |     |         |  |  |  _  |  {  |  }  |  =  |      |
 // --------------------------------------         --------------------------------------
 //                    |     |     |     |         |     |     |     |
 //                    -------------------         -------------------
                         bindings = <
-   &none &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT        &kp EQUAL &kp GRAVE &kp LPAR &kp RPAR &kp PLUS &kp BSPC
-   &none &none &none &none &none &none                      &kp BSLH &kp TILDE &kp LBKT &kp RBKT &kp MINUS &kp DEL
-   &none &none &none &none &none &none                      &kp PIPE &kp UNDER &kp LBRC &kp RBRC &kp STAR &none
+   &none &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT        &kp PLUS  &kp GRAVE &kp LPAR &kp RPAR &kp STAR &kp BSPC
+   &none &none &none &none &none &none                      &kp MINUS &kp TILDE &kp LBKT &kp RBKT &kp BSLH &kp DEL
+   &none &none &none &none &none &none                      &kp PIPE  &kp UNDER &kp LBRC &kp RBRC &kp EQUAL &none
                      &none &none &none                      &none &none &none
                         >;
                 };
