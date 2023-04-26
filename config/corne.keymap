@@ -41,7 +41,7 @@
 // --------------------------------------         --------------------------------------
 // | CTRL | F9  | F10 | F11 | F12 |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
-//                    | WIN | ALT | TAB |         |     |     |     |
+//                    | WIN | ALT |S+TAB|         |     |     |     |
 //                    -------------------         -------------------
                         bindings = <
    &none      &kp F1 &kp F2  &kp F3   &kp F4     &none              &none &none &none &none &none &mo 5
@@ -62,13 +62,13 @@
 // --------------------------------------         --------------------------------------
 // | CTRL | VD  | PREV| PP  | NEXT| VU  |         |  0  |  1  |  2  |  3  |  =  | RET  |
 // --------------------------------------         --------------------------------------
-//                    |     |     | SPC |         | SPC |  .  |     |
+//                    | WIN | ALT | SPC |         | SPC |  .  |     |
 //                    -------------------         -------------------
                         bindings = <
    &none      &none         &kp PG_UP    &kp UP     &kp PG_DN     &kp C_MUTE              &kp PLUS       &kp N7      &kp N8   &kp N9   &kp STAR     &kp BSPC
    &kp LSHIFT &kp HOME      &kp LEFT     &kp DOWN   &kp RIGHT     &kp END                 &kp MINUS      &kp N4      &kp N5   &kp N6   &kp KP_SLASH &kp DEL
    &kp LCTRL  &kp C_VOL_DN  &kp C_PREV   &kp C_PP   &kp C_NEXT    &kp C_VOL_UP            &kp N0         &kp N1      &kp N2   &kp N3   &kp EQUAL    &kp RET
-                                         &none      &none         &kp SPACE               &kp SPACE      &kp KP_DOT  &none
+                                         &kp LGUI   &kp LALT      &kp SPACE               &kp SPACE      &kp KP_DOT  &none
                         >;
 
                 };
