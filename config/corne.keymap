@@ -32,28 +32,6 @@
                 };
 //LAYER ENDS
 
-//LAYERESCT BEGIN
-                LAYERESC {
-// --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     |      |
-// --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     |      |
-// --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     |      |
-// --------------------------------------         --------------------------------------
-//                    |     |     |     |         |     |     |     |
-//                    -------------------         -------------------
-                        bindings = <
-   &none &none &none &none &none &none             &none &none &none &none &none &none
-   &none &none &none &none &none &none             &none &none &none &none &none &none
-   &none &none &none &none &none &none             &none &none &none &none &none &none
-                     &none &none &none             &none &none &none
-                        >;
-                };
-//LAYERESCT ENDS 
-
-
-
 //LAYERSPACEANDTAB BEGIN
                 LAYERSPACE2 {
 // --------------------------------------         --------------------------------------
@@ -72,48 +50,6 @@
                           &kp LGUI   &kp LALT      &kp SPACE               &kp SPACE      &kp KP_DOT  &none
                         >;
 
-                };
-//LAYER ENDS
-
-
-
-//LAYERESCT BEGIN
-                LAYERSPACE1 {
-// --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     |      |
-// --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     |      |
-// --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     |      |
-// --------------------------------------         --------------------------------------
-//                    |     |     |     |         |     |     |     |
-//                    -------------------         -------------------
-                        bindings = <
-   &none &none &none &none &none &none             &none &none &none &none &none &none
-   &none &none &none &none &none &none             &none &none &none &none &none &none
-   &none &none &none &none &none &none             &none &none &none &none &none &none
-                     &none &none &none             &none &none &none
-                        >;
-                };
-//LAYERESCT ENDS 
-
-//LAYERENT BEGIN
-                LAYERENT {
-// --------------------------------------         --------------------------------------
-// |      |  !  |  @  |  #  |  $  |  %  |         |  +  |  `  |  (  |  )  |  *  | BKSP |
-// --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |  -  |  ~  |  [  |  ]  |  \  | DEL  |
-// --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |  |  |  _  |  {  |  }  |  =  |      |
-// --------------------------------------         --------------------------------------
-//                    |     |     |     |         |     |     |     |
-//                    -------------------         -------------------
-                        bindings = <
-   &none &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT        &kp PLUS  &kp GRAVE &kp LPAR &kp RPAR &kp STAR &kp BSPC
-   &none &none &none &none &none &none                      &kp MINUS &kp TILDE &kp LBKT &kp RBKT &kp BSLH &kp DEL
-   &none &none &none &none &none &none                      &kp PIPE  &kp UNDER &kp LBRC &kp RBRC &kp EQUAL &none
-                     &none &none &none                      &none &none &none
-                        >;
                 };
 //LAYER ENDS
 
@@ -137,22 +73,22 @@
                 };
 //LAYER ENDS
 
-//LAYERSADJUST BEGIN
-                LAYERSADJUST {
+//LAYERENT BEGIN
+                LAYERENT {
 // --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     | BT_C |
+// |      |  !  |  @  |  #  |  $  |  %  |         |  +  |  `  |  (  |  )  |  *  | BKSP |
 // --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         | BT0 | BT1 | BT2 | BT3 | BT4 |      |
+// |      |     |     |     |     |     |         |  -  |  ~  |  [  |  ]  |  \  | DEL  |
 // --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// |      |     |     |     |     |     |         |  |  |  _  |  {  |  }  |  =  |      |
 // --------------------------------------         --------------------------------------
-//                    |     |     | RLF |         | RRG |     |     |
+//                    |     |     |     |         |     |     |     |
 //                    -------------------         -------------------
                         bindings = <
-   &none &none &none &none &none &none                                           &none &none &none &none &none &none
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none &none &none &none &none &none
-   &none &none &none &none &none &none                                           &none &none &none &none &none &none
-                     &none &none &none                                           &none &none &none
+   &none &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT        &kp PLUS  &kp GRAVE &kp LPAR &kp RPAR &kp STAR &kp BSPC
+   &none &none &none &none &none &none                      &kp MINUS &kp TILDE &kp LBKT &kp RBKT &kp BSLH &kp DEL
+   &none &none &none &none &none &none                      &kp PIPE  &kp UNDER &kp LBRC &kp RBRC &kp EQUAL &none
+                     &none &none &none                      &none &none &none
                         >;
                 };
 //LAYER ENDS
@@ -176,6 +112,69 @@
                         >;
                 };
 //LAYER ENDS
+
+//LAYERESCT BEGIN
+                LAYERESC {
+// --------------------------------------         --------------------------------------
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// --------------------------------------         --------------------------------------
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// --------------------------------------         --------------------------------------
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// --------------------------------------         --------------------------------------
+//                    |     |     |     |         |     |     |     |
+//                    -------------------         -------------------
+                        bindings = <
+   &none &none &none &none &none &none             &none &none &none &none &none &none
+   &none &none &none &none &none &none             &none &none &none &none &none &none
+   &none &none &none &none &none &none             &none &none &none &none &none &none
+                     &none &none &none             &none &none &none
+                        >;
+                };
+//LAYERESCT ENDS 
+
+//LAYERESCT BEGIN
+                LAYERSPACE1 {
+// --------------------------------------         --------------------------------------
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// --------------------------------------         --------------------------------------
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// --------------------------------------         --------------------------------------
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// --------------------------------------         --------------------------------------
+//                    |     |     |     |         |     |     |     |
+//                    -------------------         -------------------
+                        bindings = <
+   &none &none &none &none &none &none             &none &none &none &none &none &none
+   &none &none &none &none &none &none             &none &none &none &none &none &none
+   &none &none &none &none &none &none             &none &none &none &none &none &none
+                     &none &none &none             &none &none &none
+                        >;
+                };
+//LAYERESCT ENDS 
+
+
+//LAYERSADJUST BEGIN
+                LAYERSADJUST {
+// --------------------------------------         --------------------------------------
+// |      |     |     |     |     |     |         |     |     |     |     |     | BT_C |
+// --------------------------------------         --------------------------------------
+// |      |     |     |     |     |     |         | BT0 | BT1 | BT2 | BT3 | BT4 |      |
+// --------------------------------------         --------------------------------------
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// --------------------------------------         --------------------------------------
+//                    |     |     | RLF |         | RRG |     |     |
+//                    -------------------         -------------------
+                        bindings = <
+   &none &none &none &none &none &none                                           &none &none &none &none &none &none
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none &none &none &none &none &none
+   &none &none &none &none &none &none                                           &none &none &none &none &none &none
+                     &none &none &none                                           &none &none &none
+                        >;
+                };
+//LAYER ENDS
+
+
         };
 };
 
