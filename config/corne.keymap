@@ -32,7 +32,7 @@
                 };
 //LAYER ENDS
 
-//LAYERSPACEANDTAB BEGIN
+//LAYERSSPACE BEGIN 1
                 LAYERSPACE2 {
 // --------------------------------------         --------------------------------------
 // |      |     |     |     |     |     |         |  +  |  7  |  8  |  9  |  *  | BKSP |
@@ -53,7 +53,7 @@
                 };
 //LAYER ENDS
 
-//LAYERSMENU BEGIN
+//LAYERSMENU BEGIN 2
                 LAYERMENU {
 // --------------------------------------         --------------------------------------
 // |      |     |     |     |     |     |         |     | PU  |  ↑  | PD  |     |      |
@@ -73,7 +73,7 @@
                 };
 //LAYER ENDS
 
-//LAYERENT BEGIN
+//LAYERENT BEGIN 3
                 LAYERENT {
 // --------------------------------------         --------------------------------------
 // |      |  !  |  @  |  #  |  $  |  %  |         |  +  |  `  |  (  |  )  |  *  | BKSP |
@@ -93,7 +93,7 @@
                 };
 //LAYER ENDS
 
-//LAYERSADJUST BEGIN
+//LAYERSADJUST BEGIN 4
                 LAYERSBSPC {
 // --------------------------------------         --------------------------------------
 // | ESC  |     |     |     |     |     |         |     | F1  | F2  | F3  | F4  |      |
@@ -113,7 +113,7 @@
                 };
 //LAYER ENDS
 
-//LAYERESCT BEGIN
+//LAYERESCT BEGIN 5
                 LAYERESC {
 // --------------------------------------         --------------------------------------
 // |      |     |     |     |     |     |         |     |     |     |     |     |      |
@@ -127,13 +127,13 @@
                         bindings = <
    &none &none &none &none &none &none             &none &none &none &none &none &none
    &none &none &none &none &none &none             &none &none &none &none &none &none
-   &mo 8 &none &none &none &none &none             &none &none &none &none &none &none
+   &mo 7 &none &none &none &none &none             &none &none &none &none &none &none
                      &none &none &none             &none &none &none
                         >;
                 };
 //LAYERESCT ENDS 
 
-//LAYERESCT BEGIN
+//LAYERESCT BEGIN 6
                 LAYERSPACE1 {
 // --------------------------------------         --------------------------------------
 // |      |     |     |     |     |     |         |     |     |     |     |     |      |
@@ -154,7 +154,7 @@
 //LAYERESCT ENDS 
 
 
-//LAYERSADJUST BEGIN
+//LAYERSADJUST BEGIN 7
                 LAYERSADJUST {
 // --------------------------------------         --------------------------------------
 // |      |     |     |     |     |     |         |     |     |     |     |     |      |
