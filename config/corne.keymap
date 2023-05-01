@@ -11,6 +11,15 @@
             tapping-term-ms = <200>;
             bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
         };
+        
+     behaviors {
+            asdfgsdfsfdfgdf: tap_dance_mod_taaap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MwerwsdfsfffsdfeqrwOD_TAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
+        };
           
     };
 
