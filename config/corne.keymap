@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-behaviors {
+    behaviors {
         pht: positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP";
@@ -14,6 +14,7 @@ behaviors {
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <1>;    // <---[[the W key]]
         };
+    };
 
 
 
