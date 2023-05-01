@@ -3,40 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    behaviors {
-            lspace: tap_dance_mod_taplspace {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAPlspace";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 6 SPACE>, <&kp SPACE>;
-        };
-            rspace: tap_dance_mod_taprspace {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAPrspace";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 1 SPACE>, <&kp SPACE>;
-        };
-            retmod: tap_dance_mod_tapretmod {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAPretmod";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 2 RET>, <&kp RET>;
-        };
-            bks: tap_dance_mod_tapbks {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAPbks";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 4 BSPC>, <&kp BSPC>;
-        };
-          
-    };
-
-
-
         keymap {
                 compatible = "zmk,keymap";
 
@@ -53,10 +19,10 @@
 //                    -------------------         -------------------
 
                         bindings = <
-   &lt 5 ESC         &kp Q    &kp W    &kp E    &kp R     &kp T             &kp Y        &kp U      &kp I                &kp O   &kp P    &bks
+   &lt 5 ESC         &kp Q    &kp W    &kp E    &kp R     &kp T             &kp Y        &kp U      &kp I                &kp O   &kp P    &lt 4 BSPC
    &mt LSHIFT TAB    &kp A    &kp S    &kp D    &kp F     &kp G             &kp H        &kp J      &kp K                &kp L   &kp SEMI &kp SQT
    &kp LCTRL         &kp Z    &kp X    &kp C    &kp V     &kp B             &kp N        &kp M      &kp COMMA            &kp DOT &kp FSLH &kp LSHFT
-                                       &kp LGUI &kp LALT  &lspace           &rspace      &retmod    &lt 3 K_CONTEXT_MENU
+                                       &kp LGUI &kp LALT  &lt 6 SPACE       &lt 1 SPACE  &lt 2 RET  &lt 3 K_CONTEXT_MENU
                         >;
                 };
 //LAYER ENDS
@@ -216,4 +182,4 @@
 // |      |     |     |     |     |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
 //                    |     |     |     |         |     |     |     |
-//                    -------------------         ------------------- 
+//                    -------------------         -------------------
