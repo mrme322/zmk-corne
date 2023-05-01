@@ -4,20 +4,21 @@
 
 / {
     behaviors {
-            asdfgdfgdf: tap_dance_mod_tap {
+            lspace: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MwerweqrwOD_TAP";
+            label = "TAP_DANCE_MOD_TAPlspace";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
+            bindings = <&lt 6 SPACE>, <&kp SPACE>;
         };
         
-            td_mt: tap_dance_mood_tap {
+            rspace: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "TAP_DANCE_MOD_TAPrspace";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
+            bindings = <&lt 1 SPACE>, <&kp SPACE>;
+
         };
           
     };
