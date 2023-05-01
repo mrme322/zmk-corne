@@ -6,7 +6,7 @@
     behaviors {
             rspace: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "TAP_DANCE_MOD_TAP1";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&lt 1 SPACE>, <&kp SPACE>;
@@ -14,7 +14,7 @@
 
             lspace: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "TAP_DANCE_MOD_TAP2";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&lt 6 SPACE>, <&kp SPACE>;
@@ -22,7 +22,7 @@
 
             bsk: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "TAP_DANCE_MOD_TAP3";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&lt 4 BSPC>, <&kp BSPC>;
