@@ -20,8 +20,8 @@
 
                         bindings = <
    &lt 5 ESC         &kp Q    &kp W    &kp E    &kp R          &kp T                 &kp Y        &kp U            &kp I                &kp O   &kp P    &lt 4 BSPC
-   &mt LSHIFT TAB    &kp A    &kp S    &kp D    &kp J          &kp G                 &kp H        &kp J            &kp K                &kp L   &kp SEMI &kp SQT
-   &kp LCTRL         &kp Z    &kp X    &kp C    &kp V          &kp B                 &kp N        &kp M            &kp COMMA            &kp DOT &kp FSLH &kp LSHFT
+   &mt LSHIFT TAB    &kp A    &kp S    &kp D    &kp F          &kp G                 &kp H        &kp J            &kp K                &kp L   &kp SEMI &kp SQT
+   &kp LCTRL         &kp Z    &kp X    &kp C    &kp V          &kp B                 &kp N        &kp M            &kp COMMA            &kp DOT &kp FSLH &kp RSHFT
                                        &kp LGUI &kp LALT       &lt 6 SPACE           &lt 1 SPACE  &lt 2 RET        &lt 3 K_CONTEXT_MENU
                         >;
                 };
@@ -40,7 +40,7 @@
 //                    -------------------         -------------------
                         bindings = <
    &none      &none &none &none      &none         &none                 &kp PLUS       &kp N7      &kp N8   &kp N9   &kp STAR     &kp BSPC
-   &kp LSHIFT &none &none &none      &none         &none                 &kp MINUS      &kp N4      &kp N5   &kp N6   &kp KP_SLASH &kp DEL
+   &kp LSHIFT &none &none &none      &none         &none                 &kp MINUS      &kp N4      &kp N5   &kp N6   &kp SLASH    &kp DEL
    &kp LCTRL  &none &none &none      &none         &none                 &kp N0         &kp N1      &kp N2   &kp N3   &kp EQUAL    &kp RET
                           &kp LGUI   &kp LALT      &kp SPACE             &kp SPACE      &kp DOT     &none
                         >;
@@ -62,7 +62,7 @@
                         bindings = <
    &none      &none &none     &none     &none      &none                   &none       &kp PG_UP  &kp UP     &kp PG_DN   &none      &kp BSPC
    &kp LSHIFT &none &none     &none     &none      &none                   &kp HOME    &kp LEFT   &kp DOWN   &kp RIGHT   &kp END    &kp DEL
-   &kp LCTRL  &none &none     &none     &none      &none                   &none       &none      &none      &none       &kp RCTRL  &kp LSHIFT
+   &kp LCTRL  &none &none     &none     &none      &none                   &none       &none      &none      &none       &kp RCTRL  &kp RSHIFT
                               &kp LGUI  &kp LALT   &kp SPACE               &kp SPACE   &none      &none
                         >;
                 };
