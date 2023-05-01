@@ -6,19 +6,11 @@
     behaviors {
             td_mt: tap_dance_mod_tapj {
             compatible = "zmk,behavior-tap-dance";
-            
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&lt 1 SPACE>, <&kp SPACE>;
             };
-            
-            td_mx: tap_dance_mod_tap {
-            compatible = "zmk,behavior-tap-dance";
-            
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 2 SPACE>, <&kp SPACE>;
-            };
+          
     };
 
 
