@@ -6,7 +6,7 @@
     behaviors {
             asdfgdfgdf: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "TAP_DANCE_MwerweqrwOD_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
