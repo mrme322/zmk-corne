@@ -15,7 +15,7 @@
             td_mx: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             tapping-term-ms = <200>;
             bindings = <&lt 2 SPACE>, <&kp SPACE>;
             };
