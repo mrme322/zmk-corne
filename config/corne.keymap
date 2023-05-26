@@ -131,7 +131,7 @@
 //LAYERESCT BEGIN 6
                 LAYERSPACE1 {
 // --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// |      |     |     |     | BSP | DEL |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
 // |      |     |     |     |     |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
@@ -140,7 +140,7 @@
 //                    |     |     |     |         |     |     |     |
 //                    -------------------         -------------------
                         bindings = <
-   &none &none &none &none &none &none             &none &none &none &none &none &none
+   &none &none &none &none &kp BSPC &kp DEL           &none &none &none &none &none &none
    &none &none &none &none &none &none             &none &none &none &none &none &none
    &none &none &none &none &none &none             &none &none &none &none &none &none
                      &none &none &none             &none &none &none
@@ -152,17 +152,17 @@
 //LAYERSADJUST BEGIN 7
                 LAYERSADJUST {
 // --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     |      |
-// --------------------------------------         --------------------------------------
-// |      |     |     |     | USB |  BT |         | BT0 | BT1 | BT2 | BT3 | BT4 | BT_C |
+// |      |     |     |     |     |     |         | BT0 | BT1 | BT2 | BT3 | BT4 | BT_C |
 // --------------------------------------         --------------------------------------
 // |      |     |     |     |     |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
-//                    |     | BTL | RST |         |     | BTL  |     |
+// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// --------------------------------------         --------------------------------------
+//                    |     | BTL | RST |         |     | BTL |     |
 //                    -------------------         -------------------
                         bindings = <
    &none &none &none &none &none         &none              &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4   &bt BT_CLR
-   &none &none &none &none &out OUT_USB  &out OUT_BLE       &none          &none           &none           &none           &none          &none
+   &none &none &none &none &none         &none              &none          &none           &none           &none           &none          &none
    &none &none &none &none &none         &none              &none          &none           &none           &none           &none          &none
                      &none &bootloader   &sys_reset         &none          &bootloader     &none
                         >;
