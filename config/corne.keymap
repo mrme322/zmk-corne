@@ -51,19 +51,19 @@
 //LAYERSENT BEGIN 2
                 LAYERENT {
 // --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     | PU  |  ↑  | PD  |      | BKSP |
+// |      |     |     |     |     |     |         | VU  | PU  |  ↑  | PD  |  MT  | BKSP |
 // --------------------------------------         --------------------------------------
 // |TAB/SH|     |     |     |     |     |         | HOME|  ←  |  ↓  |  →  | END  | DEL  |
 // --------------------------------------         --------------------------------------
-// | CTRL |     |     |     |     |     |         |     |     |     |     | CTRL | SHFT |
+// | CTRL |     |     |     |     |     |         | VD  | PR  |  PP | NXT | CTRL | SHFT |
 // --------------------------------------         --------------------------------------
 //                    | WIN | ALT | SPC |         |     |     |     |
 //                    -------------------         -------------------
                         bindings = <
-   &none      &none &none     &none     &none      &none                   &none       &kp PG_UP  &kp UP     &kp PG_DN   &none      &kp BSPC
-   &kp LSHIFT &none &none     &none     &none      &none                   &kp HOME    &kp LEFT   &kp DOWN   &kp RIGHT   &kp END    &kp DEL
-   &kp LCTRL  &none &none     &none     &none      &none                   &none       &none      &none      &none       &kp RCTRL  &kp RSHIFT
-                              &kp LGUI  &kp LALT   &kp SPACE               &kp SPACE   &none      &none
+   &none      &none &none     &none     &none      &none                   &kp C_VOL_UP   &kp PG_UP  &kp UP      &kp PG_DN    &kp C_MUTE   &kp BSPC
+   &kp LSHIFT &none &none     &none     &none      &none                   &kp HOME       &kp LEFT   &kp DOWN    &kp RIGHT    &kp END      &kp DEL
+   &kp LCTRL  &none &none     &none     &none      &none                   &kp C_VOL_DN   &kp C_PREV &kp C_PLAY  &kp C_NEXT   &kp RCTRL    &kp RSHIFT
+                              &kp LGUI  &kp LALT   &kp SPACE               &kp SPACE      &none      &none
                         >;
                 };
 //LAYER ENDS
@@ -91,19 +91,19 @@
 //LAYERSADJUST BEGIN 4
                 LAYERSBSPC {
 // --------------------------------------         --------------------------------------
-// | ESC  |     |     |     |     |     |         | VD  | PR  |  PP | NXT | VU  |      | 
+// | ESC  |     |     |     |     |     |         |     |     |     |     |     |      | 
 // --------------------------------------         --------------------------------------
-// | SHFT |     |     |     |     |     |         | MT  |     |     |     |     |      |
+// | SHFT |     |     |     |     |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
 // | CTRL |     |     |     |     |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
 //                    | WIN | ALT |SPACE|         |     |     |     |
 //                    -------------------         -------------------
                         bindings = <
-   &none &none &none &none &none &none            &kp C_VOL_DN &kp C_PREV &kp C_PLAY  &kp C_NEXT  &kp C_VOL_UP  &none
-   &none &none &none &none &none &none            &kp C_MUTE   &none      &none       &none       &none         &none
-   &none &none &none &none &none &none            &none        &none      &none       &none       &none         &none
-                     &none &none &none            &none        &none      &none
+   &none &none &none &none &none &none            &none &none &none &none &none &none
+   &none &none &none &none &none &none            &none &none &none &none &none &none
+   &none &none &none &none &none &none            &none &none &none &none &none &none
+                     &none &none &none            &none &none &none
                         >;
                 };
 //LAYER ENDS
@@ -120,10 +120,10 @@
 //                    | WIN | ALT |SPACE|         |SPACE| RET | MENU|
 //                    -------------------         -------------------
                         bindings = <
-   &none &kp F1 &kp F2  &kp F3  &kp F4  &mo 7             &none &none &none &none &none &none
-   &mt LSHIFT TAB &kp F5 &kp F6  &kp F7  &kp F8  &none             &none &none &none &none &none &none
-   &kp LCTRL &kp F9 &kp F10 &kp F11 &kp F12 &none             &none &none &none &none &none &none
-                        &none   &none   &none             &none &none &none
+   &none            &kp F1   &kp F2    &kp F3    &kp F4    &mo 7             &none &none &none &none &none &none
+   &mt LSHIFT TAB   &kp F5   &kp F6    &kp F7    &kp F8    &none             &none &none &none &none &none &none
+   &kp LCTRL        &kp F9   &kp F10   &kp F11   &kp F12   &none             &none &none &none &none &none &none
+                                       &none     &none     &none             &none &none &none
                         >;
                 };
 //LAYERESCT ENDS 
@@ -141,9 +141,9 @@
 //                    -------------------         -------------------
                         bindings = <
    &none &none &none &none &kp BSPC &kp DEL           &none &none &none &none &none &none
-   &none &none &none &none &none &none             &none &none &none &none &none &none
-   &none &none &none &none &none &none             &none &none &none &none &none &none
-                     &none &none &none             &none &none &none
+   &none &none &none &none &none    &none             &none &none &none &none &none &none
+   &none &none &none &none &none    &none             &none &none &none &none &none &none
+                     &none &none    &none             &none &none &none
                         >;
                 };
 //LAYERESCT ENDS 
