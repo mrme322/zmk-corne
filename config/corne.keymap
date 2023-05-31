@@ -131,17 +131,17 @@
 //LAYERESCT BEGIN 6
                 LAYERSPACE1 {
 // --------------------------------------         --------------------------------------
-// |      |     |     |     | BSP | DEL |         |     |     |     |     |     |      |
+// |      |     |     | WCD | BSP | DEL |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// |      |     | WC← | WTB | WC→ |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
-// |      |     |     |     |     |     |         |     |     |     |     |     |      |
+// |      |     |     | WCF4|     |     |         |     |     |     |     |     |      |
 // --------------------------------------         --------------------------------------
 //                    |     |     |     |         |     |     |     |
 //                    -------------------         -------------------
                         bindings = <
    &none &none &none &none &kp BSPC &kp DEL           &none &none &none &none &none &none
-   &none &none &none &none &none    &none             &none &none &none &none &none &none
+   &none &none &none &none &kp LGUI(TAB)    &none             &none &none &none &none &none &none
    &none &none &none &none &none    &none             &none &none &none &none &none &none
                      &none &none    &none             &none &none &none
                         >;
