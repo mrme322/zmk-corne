@@ -110,7 +110,7 @@
 //                    -------------------         -------------------
                         bindings = <
    &none &none &none &none &none &none            &none &none &none &none &none &none
-   &none &none &none &none &none &none            &none &none &none &none &none &none
+   &none &kp LS(A) &kp LS(S) &kp LS(D) &kp LS(F) &kp LS(G)            &none &none &none &none &none &none
    &none &none &none &none &none &none            &none &none &none &none &none &none
                      &none &none &none            &none &none &none
                         >;
