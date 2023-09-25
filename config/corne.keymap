@@ -155,7 +155,7 @@
 //                    |     |     |     |         |     |     |     |
 //                    -------------------         -------------------
                         bindings = <
-   &none &none &none            &kp LG(RC(D))     &kp BSPC            &kp DEL                  &none &none &none &none &none &none
+   &kp LA(F4) &none &none            &kp LG(RC(D))     &kp BSPC            &kp DEL                  &none &none &none &none &none &none
    &none &none &kp LG(RC(LEFT)) &kp LG(TAB)       &kp LG(RC(RIGHT))   &none                    &none &none &none &none &none &none
    &none &none &none            &kp LG(RC(F4))    &none               &none                    &none &none &none &none &none &none
                                 &none             &none               &none                    &none &none &none
