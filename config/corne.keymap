@@ -126,10 +126,10 @@
             //                    -------------------         -------------------
 
             bindings = <
-&none           &kp F1  &kp F2   &kp F3    &kp F4    &mo 6        &none  &none  &none  &none  &none  &none
-&mt LSHIFT TAB  &kp F5  &kp F6   &kp F7    &kp F8    &none        &none  &none  &none  &none  &none  &none
-&kp LCTRL       &kp F9  &kp F10  &kp F11   &kp F12   &none        &none  &none  &none  &none  &none  &none
-                                 &kp LGUI  &kp LALT  &kp SPACE    &none  &none  &none
+&none           &kp F1  &kp F2   &kp F3    &kp F4    &mo 6    &none  &none  &none  &none  &none  &none
+&mt LSHIFT TAB  &kp F5  &kp F6   &kp F7    &kp F8    &none    &none  &none  &none  &none  &none  &none
+&kp LCTRL       &kp F9  &kp F10  &kp F11   &kp F12   &none    &none  &none  &none  &none  &none  &none
+                                 &kp LGUI  &kp LALT  &none    &none  &none  &none
             >;
         };
 
@@ -148,17 +148,17 @@
             //                    -------------------         -------------------
 
             bindings = <
-&kp LA(F4)  &none  &none             &kp LG(RC(D))   &kp BSPC           &kp DEL    &none  &none  &none  &none  &none  &none
-&none       &none  &kp LG(RC(LEFT))  &kp LG(TAB)     &kp LG(RC(RIGHT))  &none      &none  &none  &none  &none  &none  &none
-&none       &none  &none             &kp LG(RC(F4))  &none              &none      &none  &none  &none  &none  &none  &none
-                                     &none           &none              &none      &none  &none  &none
+&kp LA(F4)  &none  &none  &none      &kp BSPC   &kp DEL         &none  &none  &none  &none  &none  &none
+&none       &none  &none  &kp LC(C)  &kp LC(V)  &kp QUESTION    &none  &none  &none  &none  &none  &none
+&none       &none  &none  &none      &none      &none           &none  &none  &none  &none  &none  &none
+                          &none      &none      &none           &none  &none  &none
             >;
         };
 
         //LAYERESCT ENDS 
         //LAYERSADJUST BEGIN 7
 
-        LAYERSADJUST {
+        adjustLayer {
             // --------------------------------------         --------------------------------------
             // |      |     |     |     |     |     |         | BT0 | BT1 | BT2 | BT3 | BT4 | BT_C |
             // --------------------------------------         --------------------------------------
