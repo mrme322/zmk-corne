@@ -25,14 +25,11 @@
             key-positions = <12 13>;
             timeout-ms = <50>;
         };
-    };
 
-    macros {
-        questionEnter: questionEnter {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp QUESTION &kp ENTER>;
-            label = "QUESTIONENTER";
+        questionMark {
+            bindings = <&kp QUESTION>;
+            key-positions = <38 17>;
+            timeout-ms = <50>;
         };
     };
 
@@ -165,10 +162,10 @@
             //                    -------------------         -------------------
 
             bindings = <
-&kp LA(F4)  &none      &none      &none      &kp BSPC   &kp DEL           &none  &none  &none  &none  &none  &none
-&none       &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &questionEnter    &none  &none  &none  &none  &none  &none
-&none       &none      &none      &none      &none      &none             &none  &none  &none  &none  &none  &none
-                                  &none      &none      &none             &none  &none  &none
+&kp LA(F4)  &none      &none      &none      &kp BSPC   &kp DEL    &none  &none  &none  &none  &none  &none
+&none       &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none      &none  &none  &none  &none  &none  &none
+&none       &none      &none      &none      &none      &none      &none  &none  &none  &none  &none  &none
+                                  &none      &none      &none      &none  &none  &none
             >;
         };
 
