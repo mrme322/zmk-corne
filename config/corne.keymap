@@ -19,16 +19,6 @@
             key-positions = <12 13>;
             timeout-ms = <50>;
         };
-
-        rightBootloader {
-            bindings = <&bootloader>;
-            key-positions = <9 10 11>;
-        };
-
-        leftBootloader {
-            bindings = <&bootloader>;
-            key-positions = <0 1 2>;
-        };
     };
 
     keymap {
