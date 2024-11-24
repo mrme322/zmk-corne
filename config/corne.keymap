@@ -28,7 +28,7 @@
 
         questionMark {
             bindings = <&kp QUESTION>;
-            key-positions = <38 17>;
+            key-positions = <38 16>;
             timeout-ms = <50>;
         };
     };
