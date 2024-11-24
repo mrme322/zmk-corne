@@ -128,7 +128,7 @@
         //LAYER ENDS
         //LAYERESCT BEGIN 5
 
-        LAYERESC {
+        escLayer {
             // --------------------------------------         --------------------------------------
             // |      | F1  | F2  | F3  | F4  | ADJ |         |     |     |     |     |     |      |
             // --------------------------------------         --------------------------------------
@@ -150,7 +150,7 @@
         //LAYERESCT ENDS 
         //LAYERESCT BEGIN 6
 
-        LAYERSPACE1 {
+        leftSpaceLayer {
             // --------------------------------------         --------------------------------------
             // |      |     |     | WCD | BSP | DEL |         |     |     |     |     |     |      |
             // --------------------------------------         --------------------------------------
@@ -162,10 +162,10 @@
             //                    -------------------         -------------------
 
             bindings = <
-&kp LA(F4)  &none      &none      &none      &kp BSPC   &kp DEL    &none  &none  &none  &none  &none  &none
-&none       &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none      &none  &none  &none  &none  &none  &none
-&none       &none      &none      &none      &none      &none      &none  &none  &none  &none  &none  &none
-                                  &none      &none      &none      &none  &none  &none
+&kp LA(F4)  &none      &none      &none      &kp BSPC   &kp DEL             &none  &none  &none  &none  &none  &none
+&none       &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &mwh SCROLL_UP      &none  &none  &none  &none  &none  &none
+&none       &none      &none      &none      &none      &msc SCROLL_DOWN    &none  &none  &none  &none  &none  &none
+                                  &none      &none      &none               &none  &none  &none
             >;
         };
 
