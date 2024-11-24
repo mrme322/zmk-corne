@@ -28,7 +28,7 @@
 
         questionMark {
             bindings = <&kp QUESTION>;
-            key-positions = <38 16>;
+            key-positions = <38 17>;
             timeout-ms = <50>;
         };
     };
@@ -162,10 +162,10 @@
             //                    -------------------         -------------------
 
             bindings = <
-&kp LA(F4)  &none      &none      &none      &kp BSPC   &kp DEL    &none  &none  &none  &none  &none  &none
-&none       &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none      &none  &none  &none  &none  &none  &none
-&none       &none      &none      &none      &none      &none      &none  &none  &none  &none  &none  &none
-                                  &none      &none      &none      &none  &none  &none
+&kp LA(F4)  &none      &none      &none      &kp BSPC   &kp DEL         &none  &none      &none  &none  &none  &none
+&none       &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp QUESTION    &none  &none      &none  &none  &none  &none
+&none       &none      &none      &none      &none      &none           &none  &none      &none  &none  &none  &none
+                                  &none      &none      &none           &none  &kp ENTER  &none
             >;
         };
 
