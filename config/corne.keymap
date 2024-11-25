@@ -124,10 +124,10 @@
             //                    -------------------         -------------------
 
             bindings = <
-&none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &kp BSPC
-&none  &none     &none   &none     &none     &none        &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp BSLH   &kp DEL
-&none  &none     &none   &none     &none     &none        &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &kp ENTER
-                         &none     &none     &none        &none      &none      &none
+&none  &kp EXCL   &kp AT    &kp HASH       &kp DLLR  &kp PRCNT    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &kp BSPC
+&none  &kp CARET  &kp AMPS  &kp BACKSLASH  &none     &none        &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &kp DEL
+&none  &none      &none     &none          &none     &none        &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &kp ENTER
+                            &none          &none     &none        &none      &none      &none
             >;
         };
 
@@ -162,9 +162,9 @@
             //                    -------------------         -------------------
 
             bindings = <
-&none  &none  &none  &none           &none  &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none  &bt BT_CLR
-&none  &none  &none  &none           &none  &none          &none         &none         &none         &none  &none  &none
-&none  &none  &none  &none           &none  &none          &none         &none         &none         &none  &none  &none
+&none  &none  &none  &none           &none  &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&none  &none  &none  &none           &none  &none          &none         &none         &none         &none         &none         &none
+&none  &none  &none  &none           &none  &none          &none         &none         &none         &none         &none         &none
                      &studio_unlock  &none  &bootloader    &bootloader   &none         &none
             >;
         };
