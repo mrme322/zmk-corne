@@ -48,105 +48,12 @@
             //                    -------------------         -------------------
 
             bindings = <
-&lt 4 ESC           &kp Q  &kp W  &kp E     &kp R     &kp T          &kp Y        &kp U      &kp I                 &kp O    &kp P     &kp BACKSPACE
-&mt LSHIFT TAB      &kp A  &kp S  &kp D     &kp F     &kp G          &kp H        &kp J      &kp K                 &kp L    &kp SEMI  &kp SQT
-&mt LCTRL QUESTION  &kp Z  &kp X  &kp C     &kp V     &kp B          &kp N        &kp M      &kp COMMA             &kp DOT  &kp FSLH  &kp RSHFT
-                                  &kp LGUI  &kp LALT  &lt 5 SPACE    &lt 1 SPACE  &lt 2 RET  &lt 3 K_CONTEXT_MENU
+&lt 5 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T          &kp Y        &kp U      &kp I                 &kp O    &kp P     &kp BACKSPACE
+&mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G          &kp H        &kp J      &kp K                 &kp L    &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V              &kp B          &kp N        &kp M      &kp COMMA             &kp DOT  &kp FSLH  &kp RSHFT
+                              &kp LGUI  &mt LALT QUESTION  &lt 1 SPACE    &lt 2 SPACE  &lt 3 RET  &lt 4 K_CONTEXT_MENU
             >;
         };
-
-        //LAYER ENDS
-        //LAYERSPACE BEGIN 1
-
-        spaceLayer {
-            // --------------------------------------         --------------------------------------
-            // |      |     |     |     |     |     |         |  +  |  7  |  8  |  9  |  *  | BKSP |
-            // --------------------------------------         --------------------------------------
-            // | SHFT |     |     |     |     |     |         |  -  |  4  |  5  |  6  |  /  | DEL  |
-            // --------------------------------------         --------------------------------------
-            // | CTRL |     |     |     |     |     |         |  0  |  1  |  2  |  3  |  =  | RET  |
-            // --------------------------------------         --------------------------------------
-            //                    | WIN | ALT | SPC |         | SPC |  .  |     |
-            //                    -------------------         -------------------
-
-            bindings = <
-&kp ESCAPE  &none  &none  &none     &none     &none        &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &kp BSPC
-&kp LSHIFT  &none  &none  &none     &none     &none        &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &kp DEL
-&kp LCTRL   &none  &none  &none     &none     &none        &kp N0     &kp N1   &kp N2     &kp N3  &kp EQUAL  &kp RET
-                          &kp LGUI  &kp LALT  &kp SPACE    &none      &kp DOT  &kp ENTER
-            >;
-        };
-
-        //LAYER ENDS
-        //LAYERSENT BEGIN 2
-
-        introLayer {
-            // --------------------------------------         --------------------------------------
-            // |      |     |     |     |     |     |         | VU  | PU  |  ↑  | PD  |  MT  | BKSP |
-            // --------------------------------------         --------------------------------------
-            // |TAB/SH|     |     |     |     |     |         | HOME|  ←  |  ↓  |  →  | END  | DEL  |
-            // --------------------------------------         --------------------------------------
-            // | CTRL |     |     |     |     |     |         | VD  | PR  |  PP | NXT | CTRL | SHFT |
-            // --------------------------------------         --------------------------------------
-            //                    | WIN | ALT | SPC |         |     |     |     |
-            //                    -------------------         -------------------
-
-            bindings = <
-&kp ESCAPE  &none  &none  &none     &none     &none        &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &kp BSPC
-&kp LSHIFT  &none  &none  &none     &none     &none        &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &kp DEL
-&kp LCTRL   &none  &none  &none     &none     &none        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &kp RCTRL   &kp RSHIFT
-                          &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE     &none       &kp K_CMENU
-            >;
-        };
-
-        //LAYER ENDS
-        //LAYERMENU BEGIN 3
-
-        menuLayer {
-            // --------------------------------------         --------------------------------------
-            // |      |  !  |  @  |  #  |  $  |  %  |         |  +  |  `  |  (  |  )  |  *  | BKSP |
-            // --------------------------------------         --------------------------------------
-            // |      |     |     |     |     |     |         |  -  |  ~  |  [  |  ]  |  \  | DEL  |
-            // --------------------------------------         --------------------------------------
-            // |      |     |     |     |     |     |         |  |  |  _  |  {  |  }  |  =  |      |
-            // --------------------------------------         --------------------------------------
-            //                    |     |     |     |         |     |     |     |
-            //                    -------------------         -------------------
-
-            bindings = <
-&none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &kp BSPC
-&none  &none     &none   &none     &none     &none        &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp BSLH   &kp DEL
-&none  &none     &none   &none     &none     &none        &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &kp ENTER
-                         &none     &none     &none        &none      &none      &none
-            >;
-        };
-
-        //LAYER ENDS
-        //LAYERSADJUST BEGIN 4
-        //LAYER ENDS
-        //LAYERESCT BEGIN 5
-
-        escLayer {
-            // --------------------------------------         --------------------------------------
-            // |      | F1  | F2  | F3  | F4  | ADJ |         |     |     |     |     |     |      |
-            // --------------------------------------         --------------------------------------
-            // | SHFT | F5  | F6  | F7  | F8  |     |         |     |     |     |     |     | SHFT |
-            // --------------------------------------         --------------------------------------
-            // | CTRL | F9  | F10 | F11 | F12 |     |         |     |     |     |     |     | CTRL |
-            // --------------------------------------         --------------------------------------
-            //                    | WIN | ALT |SPACE|         |SPACE| RET | MENU|
-            //                    -------------------         -------------------
-
-            bindings = <
-&none           &kp F1  &kp F2   &kp F3    &kp F4    &mo 6    &none  &none  &none  &none  &none  &none
-&mt LSHIFT TAB  &kp F5  &kp F6   &kp F7    &kp F8    &none    &none  &none  &none  &none  &none  &none
-&kp LCTRL       &kp F9  &kp F10  &kp F11   &kp F12   &none    &none  &none  &none  &none  &none  &none
-                                 &kp LGUI  &kp LALT  &none    &none  &none  &none
-            >;
-        };
-
-        //LAYERESCT ENDS 
-        //LAYERESCT BEGIN 6
 
         leftSpaceLayer {
             // --------------------------------------         --------------------------------------
@@ -167,8 +74,81 @@
             >;
         };
 
-        //LAYERESCT ENDS 
-        //LAYERSADJUST BEGIN 7
+        spaceLayer {
+            // --------------------------------------         --------------------------------------
+            // |      |     |     |     |     |     |         |  +  |  7  |  8  |  9  |  *  | BKSP |
+            // --------------------------------------         --------------------------------------
+            // | SHFT |     |     |     |     |     |         |  -  |  4  |  5  |  6  |  /  | DEL  |
+            // --------------------------------------         --------------------------------------
+            // | CTRL |     |     |     |     |     |         |  0  |  1  |  2  |  3  |  =  | RET  |
+            // --------------------------------------         --------------------------------------
+            //                    | WIN | ALT | SPC |         | SPC |  .  |     |
+            //                    -------------------         -------------------
+
+            bindings = <
+&kp ESCAPE  &none  &none  &none     &none     &none        &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &kp BSPC
+&kp LSHIFT  &none  &none  &none     &none     &none        &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &kp DEL
+&kp LCTRL   &none  &none  &none     &none     &none        &kp N0     &kp N1   &kp N2     &kp N3  &kp EQUAL  &kp RET
+                          &kp LGUI  &kp LALT  &kp SPACE    &none      &kp DOT  &kp ENTER
+            >;
+        };
+
+        introLayer {
+            // --------------------------------------         --------------------------------------
+            // |      |     |     |     |     |     |         | VU  | PU  |  ↑  | PD  |  MT  | BKSP |
+            // --------------------------------------         --------------------------------------
+            // |TAB/SH|     |     |     |     |     |         | HOME|  ←  |  ↓  |  →  | END  | DEL  |
+            // --------------------------------------         --------------------------------------
+            // | CTRL |     |     |     |     |     |         | VD  | PR  |  PP | NXT | CTRL | SHFT |
+            // --------------------------------------         --------------------------------------
+            //                    | WIN | ALT | SPC |         |     |     |     |
+            //                    -------------------         -------------------
+
+            bindings = <
+&kp ESCAPE  &none  &none  &none     &none     &none        &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &kp BSPC
+&kp LSHIFT  &none  &none  &none     &none     &none        &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &kp DEL
+&kp LCTRL   &none  &none  &none     &none     &none        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &kp RCTRL   &kp RSHIFT
+                          &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE     &none       &kp K_CMENU
+            >;
+        };
+
+        menuLayer {
+            // --------------------------------------         --------------------------------------
+            // |      |  !  |  @  |  #  |  $  |  %  |         |  +  |  `  |  (  |  )  |  *  | BKSP |
+            // --------------------------------------         --------------------------------------
+            // |      |     |     |     |     |     |         |  -  |  ~  |  [  |  ]  |  \  | DEL  |
+            // --------------------------------------         --------------------------------------
+            // |      |     |     |     |     |     |         |  |  |  _  |  {  |  }  |  =  |      |
+            // --------------------------------------         --------------------------------------
+            //                    |     |     |     |         |     |     |     |
+            //                    -------------------         -------------------
+
+            bindings = <
+&none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &kp BSPC
+&none  &none     &none   &none     &none     &none        &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp BSLH   &kp DEL
+&none  &none     &none   &none     &none     &none        &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &kp ENTER
+                         &none     &none     &none        &none      &none      &none
+            >;
+        };
+
+        escLayer {
+            // --------------------------------------         --------------------------------------
+            // |      | F1  | F2  | F3  | F4  | ADJ |         |     |     |     |     |     |      |
+            // --------------------------------------         --------------------------------------
+            // | SHFT | F5  | F6  | F7  | F8  |     |         |     |     |     |     |     | SHFT |
+            // --------------------------------------         --------------------------------------
+            // | CTRL | F9  | F10 | F11 | F12 |     |         |     |     |     |     |     | CTRL |
+            // --------------------------------------         --------------------------------------
+            //                    | WIN | ALT |SPACE|         |SPACE| RET | MENU|
+            //                    -------------------         -------------------
+
+            bindings = <
+&none           &kp F1  &kp F2   &kp F3    &kp F4    &mo 6    &none  &none  &none  &none  &none  &none
+&mt LSHIFT TAB  &kp F5  &kp F6   &kp F7    &kp F8    &none    &none  &none  &none  &none  &none  &none
+&kp LCTRL       &kp F9  &kp F10  &kp F11   &kp F12   &none    &none  &none  &none  &none  &none  &none
+                                 &kp LGUI  &kp LALT  &none    &none  &none  &none
+            >;
+        };
 
         adjustLayer {
             // --------------------------------------         --------------------------------------
