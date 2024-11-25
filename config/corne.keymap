@@ -162,10 +162,10 @@
             //                    -------------------         -------------------
 
             bindings = <
-&kp LA(F4)  &none      &none      &none      &kp BSPC   &kp DEL    &none  &none      &none  &none  &none  &none
-&none       &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none      &none  &none      &none  &none  &none  &none
-&none       &none      &none      &none      &none      &none      &none  &none      &none  &none  &none  &none
-                                  &none      &none      &none      &none  &kp ENTER  &none
+&kp LA(F4)   &none      &none      &none      &kp BSPC   &kp DEL    &none  &none      &none  &none  &none  &none
+&kp LS(TAB)  &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none      &none  &none      &none  &none  &none  &none
+&none        &none      &none      &none      &none      &none      &none  &none      &none  &none  &none  &none
+                                   &none      &none      &none      &none  &kp ENTER  &none
             >;
         };
 
