@@ -201,6 +201,15 @@
             >;
         };
 
+        layer_9 {
+            bindings = <
+&kp  &kp  &kp  &kp  &kp  &kp    &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp    &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp    &kp  &kp  &kp  &kp  &kp  &kp
+               &kp  &kp  &kp    &kp  &kp  &kp
+            >;
+        };
+
         //LAYER ENDS
     };
 };
