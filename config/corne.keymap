@@ -83,7 +83,7 @@
             bindings = <
 &kp LA(F4)   &none      &none      &kp LG(LS(S))  &kp DELETE  &none    &none  &none  &none  &none  &none  &none
 &kp LS(TAB)  &kp LC(A)  &kp LC(X)  &kp LC(C)      &kp LC(V)   &none    &none  &none  &none  &none  &none  &none
-&none        &kp LC(Z)  &none      &none          &none       &none    &none  &none  &none  &none  &none  &none
+&none        &kp LC(Z)  &none      &none          &kp LG(D)   &none    &none  &none  &none  &none  &none  &none
                                    &none          &none       &none    &none  &none  &none
             >;
         };
