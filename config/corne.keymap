@@ -7,22 +7,21 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 &sk {
     quick-release;
     release-after-ms = <600>;
 };
 
-&lt { tapping-term-ms = <100>; };
-
 / {
     combos {
         compatible = "zmk,combos";
 
-        combo_shift {
+        IpadShorcut {
             timeout-ms = <50>;
             key-positions = <38 39>;
-            bindings = <&sk LSHIFT>;
+            bindings = <&sk LEFT_SHIFT>;
         };
 
         shift1 {
@@ -36,41 +35,37 @@
             key-positions = <19 20>;
             timeout-ms = <50>;
         };
-
-        winIpadChange {
-            bindings = <&tog 2>;
-            key-positions = <10 11>;
-            layers = <3>;
-            timeout-ms = <50>;
-        };
     };
 
-     behaviors {
-        hml: homewrow_mods_left {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            label = "HOMEROW_MODS_LEFT_HAND";
-            bindings = <&kp>, <&kp>;
-
-            tapping-term-ms = <200>;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+    macros {
+        ipadBT: ipadBT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &to 1>;
+            label = "IPADBT";
         };
 
-        hmr: homewrow_mods_right {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            label = "HOMEROW_MODS_RIGHT_HAND";
-            bindings = <&kp>, <&kp>;
-
-            tapping-term-ms = <200>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+        windowsBT: windowsBT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
+            label = "WINDOWSBT";
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        defaultWindows {
+            bindings = <
+&lt 7 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T          &kp Y        &kp U      &kp I                 &kp O    &kp P     &kp BACKSPACE
+&mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G          &kp H        &kp J      &kp K                 &kp L    &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V              &kp B          &kp N        &kp M      &kp COMMA             &kp DOT  &kp FSLH  &kp RSHFT
+                              &kp LGUI  &mt LALT QUESTION  &lt 2 SPACE    &lt 4 SPACE  &lt 5 RET  &lt 6 K_CONTEXT_MENU
+            >;
+        };
+
+        defaultIpad {
             bindings = <
 &lt 7 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T          &kp Y        &kp U      &kp I                 &kp O    &kp P     &kp BACKSPACE
 &mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G          &kp H        &kp J      &kp K                 &kp L    &kp SEMI  &kp SQT
@@ -79,7 +74,7 @@
             >;
         };
 
-        leftSpaceLayerWindows {
+        windowsShorcuts {
             bindings = <
 &none        &none      &none      &kp LG(LS(S))  &kp DELETE  &none    &none  &none  &none  &none  &none  &none
 &kp LS(TAB)  &kp LC(A)  &kp LC(X)  &kp LC(C)      &kp LC(V)   &none    &none  &none  &none  &none  &none  &none
@@ -88,21 +83,12 @@
             >;
         };
 
-        leftSpaceLayerMac {
+        ipadShorcuts {
             bindings = <
-&none        &none      &none      &kp LG(LS(N4))  &kp DELETE  &none    &none  &none  &none  &none  &none  &none
-&kp LS(TAB)  &kp LG(A)  &kp LG(X)  &kp LG(C)       &kp LG(V)   &none    &none  &none  &none  &none  &none  &none
-&none        &kp LG(Z)  &none      &none           &kp LG(H)   &none    &none  &none  &none  &none  &none  &none
-                                   &none           &none       &none    &none  &none  &none
-            >;
-        };
-
-        transparentLayer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &tog 1  &tog 2
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none        &none      &none      &kp LG(LS(NUMBER_4))  &kp DELETE  &none    &none  &none  &none  &none  &none  &none
+&kp LS(TAB)  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)   &none    &none  &none  &none  &none  &none  &none
+&none        &kp LG(Z)  &none      &none                 &kp LG(H)   &none    &none  &none  &none  &none  &none  &none
+                                   &none                 &none       &none    &none  &none  &none
             >;
         };
 
@@ -144,10 +130,10 @@
 
         adjustLayer {
             bindings = <
-&none  &none  &none  &none           &none  &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none  &none  &none  &none           &none  &none          &none         &none         &none         &none         &none         &none
-&none  &none  &none  &none           &none  &none          &none         &none         &none         &none         &none         &none
-                     &studio_unlock  &none  &bootloader    &bootloader   &none         &none
+&none  &none  &none  &none           &none  &none          &windowsBT   &ipadBT  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&none  &none  &none  &none           &none  &none          &none        &none    &none         &none         &none         &out OUT_TOG
+&none  &none  &none  &none           &none  &none          &none        &none    &none         &none         &none         &none
+                     &studio_unlock  &to 1  &bootloader    &bootloader  &to 0    &sys_reset
             >;
         };
     };
