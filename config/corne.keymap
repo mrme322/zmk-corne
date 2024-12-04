@@ -82,13 +82,15 @@
             >;
         };
 
-        windowsShorcuts {
+        L1 {
             bindings = <
 &minimize    &none      &none      &kp LG(LS(S))      &kp DELETE  &none            &none  &none  &none  &none  &none  &none
 &kp LS(TAB)  &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)   &kp BACKSPACE    &none  &none  &none  &none  &none  &none
 &none        &kp LC(Z)  &none      &kp LC(BACKSPACE)  &kp LG(D)   &none            &none  &none  &none  &none  &none  &none
                                    &none              &none       &none            &none  &none  &none
             >;
+
+            label = "windowsShorcut";
         };
 
         ipadShorcuts {
