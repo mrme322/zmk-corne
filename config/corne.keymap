@@ -90,7 +90,7 @@
                                    &none              &none       &none            &none  &none  &none
             >;
 
-            label = "windowsShorcut";
+            label = " ";
         };
 
         L2 {
