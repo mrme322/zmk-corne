@@ -24,6 +24,12 @@
             bindings = <&mo 2>;
             layers = <0>;
         };
+
+        adj {
+            bindings = <&to 7>;
+            key-positions = <0 5>;
+            layers = <0>;
+        };
     };
 
     behaviors {
