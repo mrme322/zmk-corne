@@ -45,6 +45,11 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
+
+        adjL {
+            bindings = <&mo 7>;
+            key-positions = <2 3 4 1>;
+        };
     };
 
     behaviors {
