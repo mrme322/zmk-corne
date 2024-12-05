@@ -49,6 +49,7 @@
         adjL {
             bindings = <&mo 7>;
             key-positions = <2 3 4 1>;
+            layers = <0>;
         };
     };
 
