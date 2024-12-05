@@ -24,6 +24,27 @@
             bindings = <&mo 2>;
             layers = <0>;
         };
+
+        backSpaceR {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <3 4>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 16>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -64,13 +85,20 @@
             require-prior-idle-ms = <150>;
             quick-tap-ms = <175>;
         };
+
+        backSpace: backSpace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BACKSPACE";
+            #binding-cells = <0>;
+            bindings = <&lt 5 BACKSPACE>, <&kp BACKSPACE>;
+        };
     };
 
     macros {
         minimize: minimize {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(SPACE)>, <&macro_wait_time 150>, <&kp N>;
+            bindings = <&kp LA(SPACE)>, <&macro_wait_time 200>, <&kp N>;
 
             label = "MINIMIZE";
         };
@@ -81,73 +109,73 @@
 
         L0 {
             bindings = <
-&lt 6 ESC       &kp Q            &kp W                &kp E            &kp R              &kp T          &kp Y        &kp U            &kp I                 &kp O            &kp P                 &kp BACKSPACE
-&mt LSHIFT TAB  &hml LEFT_SHIFT A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_GUI F  &kp G          &kp H        &hmr LEFT_GUI J  &hmr LEFT_CONTROL K   &hmr LEFT_ALT L  &hmr LEFT_SHIFT SEMI  &kp SQT
-&kp LCTRL       &kp Z            &kp X                &kp C            &kp V              &kp B          &kp N        &kp M            &kp COMMA             &kp DOT          &kp FSLH              &shiftCaps
-                                                      &kp LGUI         &mt LALT QUESTION  &lt 1 SPACE    &lt 3 SPACE  &lt 4 RET        &lt 5 K_CONTEXT_MENU
+&none  &kp Q              &kp W            &kp E                &kp R            &kp T          &kp Y        &kp U            &kp I                &kp O            &kp P                 &none
+&none  &hml LEFT_SHIFT A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_GUI F  &kp G          &kp H        &hmr LEFT_GUI J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_SHIFT SEMI  &none
+&none  &kp Z              &kp X            &kp C                &kp V            &kp B          &kp N        &kp M            &kp COMMA            &kp DOT          &kp FSLH              &none
+                                           &kp LEFT_GUI         &lt 6 QUESTION   &lt 1 SPACE    &lt 3 SPACE  &lt 4 RET        &lt 5 K_APP
             >;
         };
 
         winSC {
             bindings = <
-&minimize    &none      &none      &kp LG(LS(S))      &kp DELETE  &none            &none  &none  &none  &none  &none  &none
-&kp LS(TAB)  &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)   &kp BACKSPACE    &none  &none  &none  &none  &none  &none
-&none        &kp LC(Z)  &none      &kp LC(BACKSPACE)  &kp LG(D)   &none            &none  &none  &none  &none  &none  &none
-                                   &none              &none       &none            &none  &none  &none
+&none  &minimize  &none      &kp LG(LS(S))      &none      &kp BACKSPACE    &none  &none  &none  &none  &none  &none
+&none  &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)  &kp DEL          &none  &none  &none  &none  &none  &none
+&none  &kp LC(Z)  &none      &kp LC(BACKSPACE)  &kp LG(D)  &none            &none  &none  &none  &none  &none  &none
+                             &none              &none      &none            &none  &none  &none
             >;
         };
 
         ipadSC {
             bindings = <
-&none        &none      &none      &kp LG(LS(NUMBER_4))  &kp DELETE  &none    &none  &none  &none  &none  &none  &none
-&kp LS(TAB)  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)   &none    &none  &none  &none  &none  &none  &none
-&none        &kp LG(Z)  &none      &none                 &kp LG(H)   &none    &none  &none  &none  &none  &none  &none
-                                   &none                 &none       &none    &none  &none  &none
+&none  &none      &none      &kp LG(LS(NUMBER_4))  &none      &kp BACKSPACE    &none  &none  &none  &none  &none  &none
+&none  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)  &kp DEL          &none  &none  &none  &none  &none  &none
+&none  &kp LG(Z)  &none      &none                 &kp LG(H)  &none            &none  &none  &none  &none  &none  &none
+                             &none                 &none      &none            &none  &none  &none
             >;
         };
 
         num {
             bindings = <
-&kp ESCAPE      &none  &none  &none     &none     &none        &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &kp BSPC
-&mt LSHIFT TAB  &none  &none  &none     &none     &none        &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &kp DEL
-&kp LCTRL       &none  &none  &none     &none     &none        &kp N0     &kp N1   &kp N2     &kp N3  &kp EQUAL  &kp RET
-                              &kp LGUI  &kp LALT  &kp SPACE    &none      &kp DOT  &kp ENTER
+&none  &none      &none     &none      &none         &kp BSPC     &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &none
+&none  &kp LSHFT  &kp LALT  &kp LCTRL  &kp LEFT_GUI  &kp DEL      &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &none
+&none  &none      &none     &none      &none         &kp RET      &kp N0     &kp N1   &kp N2     &kp N3  &kp EQUAL  &none
+                            &kp LGUI   &kp QUESTION  &kp SPACE    &none      &kp DOT  &kp ENTER
             >;
         };
 
         nav-media {
             bindings = <
-&kp ESCAPE      &none  &none  &none     &none     &none        &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &kp BSPC
-&mt LSHIFT TAB  &none  &none  &none     &none     &none        &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &kp DEL
-&kp LCTRL       &none  &none  &none     &none     &none        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &kp RCTRL   &kp RSHIFT
-                              &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE     &none       &kp K_CMENU
+&none  &none      &none     &none      &none         &none        &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &none
+&none  &kp LSHFT  &kp LALT  &kp LCTRL  &kp LEFT_GUI  &none        &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &none
+&none  &none      &none     &none      &none         &none        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &none       &none
+                            &kp LGUI   &kp LALT      &kp SPACE    &kp SPACE     &none       &kp K_CMENU
             >;
         };
 
         symb {
             bindings = <
-&kp ESC             &kp EXCL   &kp AT    &kp HASH       &kp DLLR  &kp PRCNT    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &kp BSPC
-&mt LEFT_SHIFT TAB  &kp CARET  &kp AMPS  &kp BACKSLASH  &none     &none        &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &kp DEL
-&kp LCTRL           &none      &none     &none          &none     &none        &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &kp ENTER
-                                         &none          &none     &none        &none      &none      &none
+&none  &kp EXCL   &kp AT    &kp HASH       &kp DLLR      &kp BACKSPACE    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &none
+&none  &kp LSHFT  &kp LALT  &kp LCTRL      &kp LEFT_GUI  &kp DELETE       &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &none
+&none  &kp CARET  &kp AMPS  &kp BACKSLASH  &kp APOS      &kp PERCENT      &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &none
+                            &none          &none         &none            &none      &none      &none
             >;
         };
 
         Fn {
             bindings = <
-&none           &kp F1  &kp F2   &kp F3    &kp F4    &mo 7    &none  &none  &none  &none  &none  &none
-&mt LSHIFT TAB  &kp F5  &kp F6   &kp F7    &kp F8    &none    &none  &none  &none  &none  &none  &none
-&kp LCTRL       &kp F9  &kp F10  &kp F11   &kp F12   &none    &none  &none  &none  &none  &none  &none
-                                 &kp LGUI  &kp LALT  &none    &none  &none  &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &mo 7    &none  &none         &none      &none     &none      &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &none    &none  &kp LEFT_GUI  &kp LCTRL  &kp LALT  &kp LSHFT  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &none    &none  &none         &none      &none     &none      &none
+                        &none    &none    &none    &none  &none         &none
             >;
         };
 
         adj {
             bindings = <
-&none  &none  &none  &none           &none  &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none  &none  &none  &none           &none  &none          &none         &none         &none         &none         &none         &none
-&none  &none  &none  &none           &none  &none          &none         &none         &none         &none         &none         &none
-                     &studio_unlock  &none  &bootloader    &bootloader   &out OUT_TOG  &sys_reset
+&none  &none  &none  &none  &none  &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none
+&none  &none  &none  &none  &none  &none          &none         &none         &none         &none         &bt BT_CLR      &none
+&none  &none  &none  &none  &none  &none          &none         &none         &none         &none         &studio_unlock  &none
+                     &none  &none  &bootloader    &bootloader   &none         &out OUT_TOG
             >;
         };
     };
