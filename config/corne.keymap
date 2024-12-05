@@ -40,7 +40,7 @@
         };
 
         tab {
-            bindings = <&kp TAB>;
+            bindings = <&kp QUESTION>;
             key-positions = <15 16>;
             require-prior-idle-ms = <100>;
             layers = <0>;
