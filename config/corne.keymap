@@ -159,7 +159,7 @@
             bindings = <
 &none  &none      &none     &none      &none         &none        &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &none
 &none  &kp LSHFT  &kp LALT  &kp LCTRL  &kp LEFT_GUI  &none        &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &none
-&none  &none      &none     &none      &none         &none        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &none       &none
+&none  &none      &none     &none      &none         &none        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &kp CAPS    &none
                             &kp LGUI   &kp LALT      &kp SPACE    &kp SPACE     &none       &kp K_CMENU
             >;
         };
