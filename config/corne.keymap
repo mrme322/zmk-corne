@@ -32,29 +32,50 @@
             layers = <0>;
         };
 
-        esc {
+        escL {
             bindings = <&kp ESCAPE>;
             key-positions = <3 4>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
 
-        tab {
+        questionR {
             bindings = <&kp QUESTION>;
-            key-positions = <15 16>;
+            key-positions = <27 28>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
 
         adjL {
             bindings = <&mo 7>;
-            key-positions = <2 3 4 1>;
+            key-positions = <1 5>;
             layers = <0>;
         };
 
         aphostrope {
             bindings = <&kp SQT>;
-            key-positions = <22 21>;
+            key-positions = <21 20>;
+            layers = <0>;
+        };
+
+        questionL {
+            bindings = <&kp QUESTION>;
+            key-positions = <31 32>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        backspaceL {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <15 16>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        escR {
+            bindings = <&kp ESCAPE>;
+            key-positions = <7 8>;
+            require-prior-idle-ms = <100>;
             layers = <0>;
         };
     };
@@ -105,10 +126,10 @@
 
         L0 {
             bindings = <
-&none  &kp Q              &kp W            &kp E                &kp R            &kp T          &kp Y        &kp U            &kp I                &kp O            &kp P                 &none
-&none  &hml LEFT_SHIFT A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_GUI F  &kp G          &kp H        &hmr LEFT_GUI J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_SHIFT SEMI  &none
-&none  &kp Z              &kp X            &kp C                &kp V            &kp B          &kp N        &kp M            &kp COMMA            &kp DOT          &kp SLASH             &none
-                                           &kp LEFT_GUI         &lt 6 TAB        &lt 1 SPACE    &lt 3 SPACE  &lt 4 RET        &lt 5 K_APP
+&none  &kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P               &none
+&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G          &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMI  &none
+&none  &kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH           &none
+                                         &kp LEFT_GUI         &lt 6 TAB          &lt 1 SPACE    &lt 3 SPACE  &lt 4 RET          &lt 5 K_APP
             >;
         };
 
@@ -132,37 +153,37 @@
 
         num {
             bindings = <
-&none  &none      &none     &none      &none         &kp BSPC     &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &none
-&none  &kp LSHFT  &kp LALT  &kp LCTRL  &kp LEFT_GUI  &kp DEL      &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &none
-&none  &none      &none     &none      &none         &kp RET      &kp N0     &kp N1   &kp N2     &kp N3  &kp EQUAL  &none
-                            &kp LGUI   &kp TAB       &kp SPACE    &none      &kp DOT  &kp ENTER
+&none  &none         &none     &none      &none           &kp BSPC     &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &kp DEL      &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &none
+&none  &none         &none     &none      &none           &kp RET      &kp N0     &kp N1   &kp N2     &kp N3  &kp EQUAL  &none
+                               &kp LGUI   &kp TAB         &kp SPACE    &none      &kp DOT  &kp ENTER
             >;
         };
 
         nav-media {
             bindings = <
-&none  &none      &none     &none      &none         &kp BACKSPACE    &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &none
-&none  &kp LSHFT  &kp LALT  &kp LCTRL  &kp LEFT_GUI  &kp DELETE       &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &none
-&none  &none      &none     &none      &none         &kp ENTER        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &kp CAPS    &none
-                            &kp LGUI   &kp TAB       &kp SPACE        &kp SPACE     &none       &kp K_CMENU
+&none  &none         &none     &none      &none           &kp BACKSPACE    &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &kp DELETE       &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &none
+&none  &none         &none     &none      &none           &kp ENTER        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &kp CAPS    &none
+                               &kp LGUI   &kp TAB         &kp SPACE        &kp SPACE     &none       &kp K_CMENU
             >;
         };
 
         symb {
             bindings = <
-&none  &kp EXCL   &kp AT    &kp HASH       &kp DLLR      &kp BACKSPACE    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &none
-&none  &kp LSHFT  &kp LALT  &kp LCTRL      &kp LEFT_GUI  &kp DELETE       &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &none
-&none  &kp CARET  &kp AMPS  &kp BACKSLASH  &kp APOS      &kp PERCENT      &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &none
-                            &none          &none         &kp SPACE        &kp SPACE  &none      &none
+&none  &kp EXCL      &kp AT    &kp HASH       &kp DLLR        &kp BACKSPACE    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT  &kp DELETE       &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &none
+&none  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp APOS        &kp PERCENT      &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &none
+                               &none          &kp TAB         &kp SPACE        &kp SPACE  &kp ENTER  &none
             >;
         };
 
         Fn {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none        &none      &none         &none      &none     &none      &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &none        &none      &kp LEFT_GUI  &kp LCTRL  &kp LALT  &kp LSHFT  &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &none        &none      &none         &none      &none     &none      &none
-                        &none    &none    &kp SPACE    &kp SPACE  &none         &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none        &none      &none           &none      &none     &none         &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &none        &none      &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &none        &none      &none           &none      &none     &none         &none
+                        &none    &none    &kp SPACE    &kp SPACE  &none           &none
             >;
         };
 
