@@ -29,14 +29,12 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
         escL {
             bindings = <&kp ESCAPE>;
             key-positions = <14 15>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
         question {
@@ -55,13 +53,6 @@
         aphostrope {
             bindings = <&kp SQT>;
             key-positions = <21 20>;
-            layers = <0>;
-        };
-
-        backspaceL {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <15 16>;
-            require-prior-idle-ms = <100>;
             layers = <0>;
         };
     };
