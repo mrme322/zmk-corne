@@ -60,7 +60,7 @@
 
         questionL {
             bindings = <&kp QUESTION>;
-            key-positions = <31 32>;
+            key-positions = <>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
