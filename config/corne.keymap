@@ -63,7 +63,7 @@
         windowsShorcuts {
             bindings = <
 &none        &none      &none      &kp LG(LS(S))      &kp DELETE  &kp BACKSPACE    &none  &none  &none  &none  &none  &none
-&kp LS(TAB)  &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)   &none            &none  &none  &none  &none  &none  &none
+&kp LS(TAB)  &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)   &kp DEL          &none  &none  &none  &none  &none  &none
 &none        &kp LC(Z)  &none      &kp LC(BACKSPACE)  &kp LG(D)   &none            &none  &none  &none  &none  &none  &none
                                    &none              &none       &none            &none  &none  &none
             >;
@@ -71,19 +71,19 @@
 
         ipadShorcuts {
             bindings = <
-&none        &none      &none      &kp LG(LS(NUMBER_4))  &kp DELETE  &none    &none  &none  &none  &none  &none  &none
-&kp LS(TAB)  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)   &none    &none  &none  &none  &none  &none  &none
-&none        &kp LG(Z)  &none      &none                 &kp LG(H)   &none    &none  &none  &none  &none  &none  &none
-                                   &none                 &none       &none    &none  &none  &none
+&none        &none      &none      &kp LG(LS(NUMBER_4))  &kp DELETE  &none      &none  &none  &none  &none  &none  &none
+&kp LS(TAB)  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)   &kp DEL    &none  &none  &none  &none  &none  &none
+&none        &kp LG(Z)  &none      &none                 &kp LG(H)   &none      &none  &none  &none  &none  &none  &none
+                                   &none                 &none       &none      &none  &none  &none
             >;
         };
 
         spaceLayer {
             bindings = <
-&kp ESCAPE      &none  &none  &none     &none     &none        &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &kp BSPC
-&mt LSHIFT TAB  &none  &none  &none     &none     &none        &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &kp DEL
-&kp LCTRL       &none  &none  &none     &none     &none        &kp N0     &kp N1   &kp N2     &kp N3  &kp EQUAL  &kp RET
-                              &kp LGUI  &kp LALT  &kp SPACE    &none      &kp DOT  &kp ENTER
+&kp ESCAPE      &none      &none     &none      &none         &none        &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &kp BSPC
+&mt LSHIFT TAB  &kp LSHFT  &kp LALT  &kp RCTRL  &kp LEFT_GUI  &none        &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &kp DEL
+&kp LCTRL       &none      &none     &none      &none         &none        &kp N0     &kp N1   &kp N2     &kp N3  &kp EQUAL  &kp RET
+                                     &none      &none         &kp SPACE    &none      &kp DOT  &kp ENTER
             >;
         };
 
