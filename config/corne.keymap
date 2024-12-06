@@ -58,13 +58,6 @@
             layers = <0>;
         };
 
-        questionL {
-            bindings = <&kp QUESTION>;
-            key-positions = <>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
-
         backspaceL {
             bindings = <&kp BACKSPACE>;
             key-positions = <15 16>;
