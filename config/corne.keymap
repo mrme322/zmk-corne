@@ -89,10 +89,10 @@
 
         introLayer {
             bindings = <
-&kp ESCAPE      &none  &none  &none     &none     &none        &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &kp BSPC
-&mt LSHIFT TAB  &kp LSHFT  &kp LALT  &kp RCTRL  &kp LEFT_GUI     &none        &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &kp DEL
-&kp LCTRL       &none  &none  &none     &none     &none        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &kp RCTRL   &kp RSHIFT
-                              &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE     &none       &kp K_CMENU
+&kp ESCAPE      &none      &none     &none      &none         &none        &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &kp BSPC
+&mt LSHIFT TAB  &kp LSHFT  &kp LALT  &kp RCTRL  &kp LEFT_GUI  &none        &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &kp DEL
+&kp LCTRL       &none      &none     &none      &none         &none        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &kp RCTRL   &kp RSHIFT
+                                     &none      &none         &kp SPACE    &kp SPACE     &none       &kp K_CMENU
             >;
         };
 
