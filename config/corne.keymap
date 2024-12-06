@@ -22,6 +22,7 @@
             timeout-ms = <50>;
             key-positions = <38 39>;
             bindings = <&mo 2>;
+            layers = <0>;
         };
 
         shift1 {
@@ -51,7 +52,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        defaultWindows {
+        L0 {
             bindings = <
 &lt 6 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T          &kp Y        &kp U      &kp I                 &kp O    &kp P     &kp BACKSPACE
 &mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G          &kp H        &kp J      &kp K                 &kp L    &kp SEMI  &kp SQT
@@ -60,7 +61,7 @@
             >;
         };
 
-        windowsShorcuts {
+        winSC {
             bindings = <
 &none        &none      &none      &kp LG(LS(S))      &kp DELETE  &kp BACKSPACE    &none  &none  &none  &none  &none  &none
 &kp LS(TAB)  &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)   &kp DEL          &none  &none  &none  &none  &none  &none
@@ -69,7 +70,7 @@
             >;
         };
 
-        ipadShorcuts {
+        ipadSC {
             bindings = <
 &none        &none      &none      &kp LG(LS(NUMBER_4))  &kp DELETE  &none      &none  &none  &none  &none  &none  &none
 &kp LS(TAB)  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)   &kp DEL    &none  &none  &none  &none  &none  &none
@@ -78,7 +79,7 @@
             >;
         };
 
-        spaceLayer {
+        num {
             bindings = <
 &kp ESCAPE      &none      &none     &none      &none         &none        &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &kp BSPC
 &mt LSHIFT TAB  &kp LSHFT  &kp LALT  &kp RCTRL  &kp LEFT_GUI  &none        &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &kp DEL
@@ -87,7 +88,7 @@
             >;
         };
 
-        introLayer {
+        nav-media {
             bindings = <
 &kp ESCAPE      &none      &none     &none      &none         &none        &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &kp BSPC
 &mt LSHIFT TAB  &kp LSHFT  &kp LALT  &kp RCTRL  &kp LEFT_GUI  &none        &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &kp DEL
@@ -96,7 +97,7 @@
             >;
         };
 
-        menuLayer {
+        symb {
             bindings = <
 &kp ESC             &kp EXCL   &kp AT    &kp HASH       &kp DLLR      &kp PRCNT    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &kp BSPC
 &mt LEFT_SHIFT TAB  &kp LSHFT  &kp LALT  &kp RCTRL      &kp LEFT_GUI  &none        &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &kp DEL
@@ -105,7 +106,7 @@
             >;
         };
 
-        escLayer {
+        fn {
             bindings = <
 &none           &kp F1  &kp F2   &kp F3    &kp F4    &mo 7    &none  &none  &none  &none  &none  &none
 &mt LSHIFT TAB  &kp F5  &kp F6   &kp F7    &kp F8    &none    &none  &none  &none  &none  &none  &none
@@ -114,7 +115,7 @@
             >;
         };
 
-        adjustLayer {
+        adj {
             bindings = <
 &none  &none  &none  &none           &none  &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &none  &none  &none  &none           &none  &none          &none         &none         &none         &none         &none         &none
