@@ -64,13 +64,6 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
-
-        escR {
-            bindings = <&kp ESCAPE>;
-            key-positions = <7 8>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
     };
 
     behaviors {
