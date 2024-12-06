@@ -34,7 +34,7 @@
 
         escL {
             bindings = <&kp ESCAPE>;
-            key-positions = <3 4>;
+            key-positions = <14 15>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
