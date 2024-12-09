@@ -87,6 +87,7 @@
             key-positions = <31 32>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         questoionL {
@@ -94,6 +95,7 @@
             key-positions = <28 27>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
     };
 
