@@ -31,6 +31,7 @@
             bindings = <&kp ESCAPE>;
             key-positions = <3 4>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         adjL {
@@ -52,6 +53,7 @@
             key-positions = <33 32>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         escR {
