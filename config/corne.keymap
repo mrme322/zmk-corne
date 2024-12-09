@@ -81,6 +81,20 @@
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
         };
+
+        questionR {
+            bindings = <&kp QUESTION>;
+            key-positions = <31 32>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+        };
+
+        questoionL {
+            bindings = <&kp QUESTION>;
+            key-positions = <28 27>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     behaviors {
