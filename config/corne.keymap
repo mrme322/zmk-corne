@@ -159,6 +159,13 @@
             flavor = "tap-unless-interrupted";
             bindings = <&mo>, <&sk>;
         };
+
+        spaceWinIpad: spaceWinIpad {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACEWINIPAD";
+            #binding-cells = <0>;
+            bindings = <&lt 1 SPACE>, <&lt 2 SPACE>;
+        };
     };
 
     macros {
