@@ -18,14 +18,6 @@
     combos {
         compatible = "zmk,combos";
 
-        IpadShorcut {
-            timeout-ms = <35>;
-            key-positions = <16 19>;
-            bindings = <&mo 2>;
-            layers = <0>;
-            slow-release;
-        };
-
         escL {
             timeout-ms = <40>;
             bindings = <&kp ESCAPE>;
@@ -166,13 +158,6 @@
             retro-tap;
             flavor = "tap-unless-interrupted";
             bindings = <&mo>, <&sk>;
-        };
-
-        spaceWinIpad: spaceWinIpad {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SPACEWINIPAD";
-            #binding-cells = <0>;
-            bindings = <&lt 1 SPACE>, <&lt 2 SPACE>;
         };
     };
 
