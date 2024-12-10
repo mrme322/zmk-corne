@@ -29,7 +29,7 @@
         escL {
             timeout-ms = <40>;
             bindings = <&kp ESCAPE>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
@@ -86,7 +86,7 @@
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0>;
-layers = <0 5 3 4>;
+            layers = <0 5 3 4>;
         };
 
         delR {
@@ -95,7 +95,7 @@ layers = <0 5 3 4>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0>;
-layers = <0 5 3 4>;
+            layers = <0 5 3 4>;
         };
 
         undo {
@@ -104,7 +104,15 @@ layers = <0 5 3 4>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0>;
-layers = <0 5 3 4>;
+            layers = <0 5 3 4>;
+        };
+
+        delL {
+            bindings = <&kp DELETE>;
+            key-positions = <4 3>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
         };
     };
 
