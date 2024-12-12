@@ -213,7 +213,7 @@
             bindings = <
 &none  &kp EXCL      &kp AT    &kp HASH       &kp DLLR        &kp BACKSPACE    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &none
 &none  &kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT  &kp DELETE       &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &none
-&none  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp APOS        &kp PERCENT      &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &none
+&none  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp PERCENT     &kp ENTER        &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &none
                                &none          &kp TAB         &kp SPACE        &kp SPACE  &kp ENTER  &none
             >;
         };
