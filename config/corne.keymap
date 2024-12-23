@@ -41,7 +41,7 @@
         };
 
         SKshift {
-            bindings = <&sk LEFT_SHIFT>;
+            bindings = <&mo 2>;
             key-positions = <38 39>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
