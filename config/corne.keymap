@@ -121,6 +121,16 @@
             quick-tap-ms = <175>;
         };
 
+        keyrepeat: keyrepeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KEYREPEAT";
+            bindings = <&mo>, <&key_repeat>;
+
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <50>;
+        };
+
         stickShiftlt: stickShiftlt {
             compatible = "zmk,behavior-hold-tap";
             label = "STICKSHIFTLT";
@@ -157,55 +167,55 @@
 
         winSC {
             bindings = <
-&none  &minimize  &none      &kp LG(LS(S))      &none      &kp BACKSPACE    &none  &none  &none  &none  &none  &none
-&none  &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)  &kp DEL          &none  &none  &none  &none  &none  &none
-&none  &kp LC(Z)  &none      &kp LC(BACKSPACE)  &kp LG(D)  &kp ENTER        &none  &none  &none  &none  &none  &none
-                             &none              &none      &none            &none  &none  &none
+&none  &minimize  &none      &kp LG(LS(S))      &none      &none    &none  &none  &none  &none  &none  &none
+&none  &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)  &none    &none  &none  &none  &none  &none  &none
+&none  &kp LC(Z)  &none      &kp LC(BACKSPACE)  &kp LG(D)  &none    &none  &none  &none  &none  &none  &none
+                             &none              &none      &none    &none  &none  &none
             >;
         };
 
         ipadSC {
             bindings = <
-&none  &none      &none      &kp LG(LS(NUMBER_4))  &none      &kp BACKSPACE    &none  &none  &none  &none  &none  &none
-&none  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)  &kp DEL          &none  &none  &none  &none  &none  &none
-&none  &kp LG(Z)  &none      &none                 &kp LG(H)  &kp ENTER        &none  &none  &none  &none  &none  &none
-                             &none                 &none      &none            &none  &none  &none
+&none  &none      &none      &kp LG(LS(NUMBER_4))  &none      &none    &none  &none  &none  &none  &none  &none
+&none  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)  &none    &none  &none  &none  &none  &none  &none
+&none  &kp LG(Z)  &none      &none                 &kp LG(H)  &none    &none  &none  &none  &none  &none  &none
+                             &none                 &none      &none    &none  &none  &none
             >;
         };
 
         num {
             bindings = <
-&none  &none         &none     &none      &none           &kp BSPC     &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &none
-&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &kp DEL      &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &none
-&none  &none         &none     &none      &none           &kp RET      &kp N0     &kp N1   &kp N2     &kp N3  &kp EQUAL  &none
-                               &kp LGUI   &kp TAB         &kp SPACE    &none      &kp DOT  &kp ENTER
+&none  &none         &none     &none      &none           &none    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp STAR   &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH  &none
+&none  &none         &none     &none      &none           &none    &kp N0     &kp N1  &kp N2  &kp N3  &kp EQUAL  &none
+                               &none      &none           &none    &none      &none   &none
             >;
         };
 
         nav-media {
             bindings = <
-&none  &none         &none     &none      &none           &kp BACKSPACE    &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &none
-&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &kp DELETE       &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &none
-&none  &none         &none     &none      &none           &kp ENTER        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &kp CAPS    &none
-                               &kp LGUI   &kp TAB         &kp SPACE        &kp SPACE     &none       &kp K_CMENU
+&none  &none         &none     &none      &none           &none    &kp C_VOL_UP  &kp PG_UP   &kp UP      &kp PG_DN   &kp C_MUTE  &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp HOME      &kp LEFT    &kp DOWN    &kp RIGHT   &kp END     &none
+&none  &none         &none     &none      &none           &none    &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp CAPS    &none
+                               &none      &none           &none    &none         &none       &none
             >;
         };
 
         symb {
             bindings = <
-&none  &kp EXCL      &kp AT    &kp HASH       &kp DLLR        &kp BACKSPACE    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &none
-&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT  &kp DELETE       &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &none
-&none  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp PERCENT     &kp ENTER        &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &none
-                               &kp LEFT_GUI   &kp TAB         &kp SPACE        &kp SPACE  &kp ENTER  &none
+&none  &kp EXCL      &kp AT    &kp HASH       &kp DLLR        &none    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT  &none    &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &none
+&none  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp PERCENT     &none    &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &none
+                               &none          &none           &none    &none      &none      &none
             >;
         };
 
         Fn {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3        &kp F4   &kp BSPC     &none      &none           &none      &none     &none         &none
-&none  &kp F5  &kp F6   &kp F7        &kp F8   &kp DEL      &none      &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
-&none  &kp F9  &kp F10  &kp F11       &kp F12  &kp ENTER    &none      &none           &none      &none     &none         &none
-                        &kp LEFT_GUI  &none    &kp SPACE    &kp SPACE  &kp ENTER       &kp K_APP
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none    &none  &none           &none      &none     &none         &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &none    &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &none    &none  &none           &none      &none     &none         &none
+                        &none    &none    &none    &none  &none           &none
             >;
         };
 
