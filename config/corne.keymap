@@ -40,7 +40,7 @@
             layers = <0>;
         };
 
-        SKshift {
+        ipadSC {
             bindings = <&mo 2>;
             key-positions = <38 39>;
             timeout-ms = <150>;
