@@ -89,6 +89,14 @@
             layers = <0>;
             layers = <0 5 3 4>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <32 31>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -185,10 +193,10 @@
 
         num {
             bindings = <
-&none  &none         &none     &none      &none           &none    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp STAR   &none
-&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH  &none
-&none  &none         &none     &none      &none           &none    &kp N0     &kp N1  &kp N2  &kp N3  &kp EQUAL  &none
-                               &none      &none           &none    &none      &none   &none
+&none  &none         &none     &none      &none           &none    &kp PLUS   &kp N7      &kp N8  &kp N9  &kp STAR   &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp MINUS  &kp N4      &kp N5  &kp N6  &kp SLASH  &none
+&none  &none         &none     &none      &none           &none    &kp N0     &kp N1      &kp N2  &kp N3  &kp EQUAL  &none
+                               &none      &none           &none    &none      &kp PERIOD  &none
             >;
         };
 
