@@ -212,8 +212,8 @@
         symb {
             bindings = <
 &none  &kp EXCL      &kp AT    &kp HASH       &kp DLLR        &none    &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE  &kp STAR   &none
-&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT  &none    &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE  &kp SLASH  &none
-&none  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp PERCENT     &none    &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDER  &kp EQUAL  &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT  &none    &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER  &kp SLASH  &none
+&none  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp PERCENT     &none    &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE  &kp EQUAL  &none
                                &none          &none           &none    &none      &none                 &none
             >;
         };
