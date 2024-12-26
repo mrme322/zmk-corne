@@ -40,14 +40,6 @@
             layers = <0>;
         };
 
-        ipadSC {
-            bindings = <&mo 2>;
-            key-positions = <38 39>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
-
         backR {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
@@ -100,7 +92,7 @@
 
         shift {
             bindings = <&caps_word>;
-            key-positions = <37 40>;
+            key-positions = <38 39>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
             layers = <0>;
