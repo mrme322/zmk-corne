@@ -190,28 +190,28 @@
         dt1: dt1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LEFT_ARROW)) &kp LC(LG(LEFT_ARROW)) &kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT))>;
+            bindings = <&kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT))>;
             label = "DT1";
         };
 
         dt2: dt2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LEFT_ARROW)) &kp LC(LG(LEFT_ARROW)) &kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT))>;
+            bindings = <&kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT))>;
             label = "DT2";
         };
 
         dt3: dt3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LEFT_ARROW)) &kp LC(LG(LEFT_ARROW)) &kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT))>;
+            bindings = <&kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT))>;
             label = "DT3";
         };
 
         dt4: dt4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LEFT_ARROW)) &kp LC(LG(LEFT_ARROW)) &kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT))>;
+            bindings = <&kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT))>;
             label = "DT4";
         };
     };
