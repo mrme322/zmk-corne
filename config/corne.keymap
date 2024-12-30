@@ -90,7 +90,7 @@
             layers = <0 5 3 4>;
         };
 
-        shift {
+        capsWords {
             bindings = <&caps_word>;
             key-positions = <38 39>;
             timeout-ms = <150>;
@@ -110,6 +110,16 @@
             bindings = <&mo 5>;
             key-positions = <37 40>;
             timeout-ms = <150>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+            slow-release;
+        };
+
+        ipadLayer {
+            bindings = <&mo 2>;
+            key-positions = <36 41>;
+            timeout-ms = <150>;
+            slow-release;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
