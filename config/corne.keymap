@@ -107,7 +107,7 @@
         };
 
         ipadLayer {
-            bindings = <&mo 8>;
+            bindings = <&mo 7>;
             key-positions = <36 41>;
             timeout-ms = <150>;
             slow-release;
