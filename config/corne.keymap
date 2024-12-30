@@ -203,7 +203,7 @@
 
         rightHand {
             bindings = <
-&none  &kp ESC       &kp LS(BSPC)  &kp DEL    &kp BSPC        &none    &none  &kp BSPC        &kp DELETE  &kp SQT   &none         &none
+&none  &kp ESC       &kp LC(BSPC)  &kp DEL    &kp BSPC        &none    &none  &kp BSPC        &kp DELETE  &kp SQT   &none         &none
 &none  &kp LEFT_GUI  &kp LALT      &kp LCTRL  &kp LEFT_SHIFT  &none    &none  &kp LEFT_SHIFT  &kp LCTRL   &kp LALT  &kp LEFT_WIN  &none
 &none  &none         &none         &none      &none           &none    &none  &none           &none       &none     &none         &none
                                    &none      &none           &none    &none  &none           &none
