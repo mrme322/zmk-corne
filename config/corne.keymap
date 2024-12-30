@@ -18,39 +18,11 @@
     combos {
         compatible = "zmk,combos";
 
-        escL {
-            timeout-ms = <40>;
-            bindings = <&kp ESCAPE>;
-            key-positions = <3 4>;
-            require-prior-idle-ms = <100>;
-        };
-
         adjL {
             timeout-ms = <300>;
             bindings = <&mo 7>;
             key-positions = <1 5>;
             layers = <0>;
-        };
-
-        aphostrope {
-            timeout-ms = <35>;
-            bindings = <&kp SQT>;
-            key-positions = <8 9>;
-            layers = <0>;
-        };
-
-        backR {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <19 20>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-        };
-
-        backL {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <16 15>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
         };
 
         questionR {
