@@ -105,6 +105,14 @@
             require-prior-idle-ms = <100>;
             layers = <0 5 3 4>;
         };
+
+        ipadLayer {
+            bindings = <&mo 2>;
+            key-positions = <37 40>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
     };
 
     behaviors {
