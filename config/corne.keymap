@@ -330,10 +330,10 @@
 
         rightHand {
             bindings = <
-&none  &none  &none  &kp ESC            &kp DEL   &none    &none  &kp DEL    &kp SQT       &none         &none  &none
-&none  &none  &none  &kp LC(BACKSPACE)  &kp BSPC  &none    &none  &kp BSPC   &kp ENTER     &kp QUESTION  &none  &none
-&none  &none  &none  &none              &none     &none    &none  &kp ENTER  &kp QUESTION  &none         &none  &none
-                     &none              &none     &none    &none  &none      &none
+&none  &none  &none  &kp ESC            &kp DEL   &none    &none  &kp DEL   &kp SQT       &none  &none  &none
+&none  &none  &none  &kp LC(BACKSPACE)  &kp BSPC  &none    &none  &kp BSPC  &kp QUESTION  &none  &none  &none
+&none  &none  &none  &none              &none     &none    &none  &none     &none         &none  &none  &none
+                     &none              &none     &none    &none  &none     &none
             >;
         };
 
