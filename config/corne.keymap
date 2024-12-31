@@ -21,7 +21,7 @@
         escL {
             timeout-ms = <40>;
             bindings = <&kp ESCAPE>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
             require-prior-idle-ms = <100>;
             layers = <0 5 3 4>;
         };
@@ -100,7 +100,7 @@
 
         delL {
             bindings = <&kp DEL>;
-            key-positions = <16 17>;
+            key-positions = <3 4>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0 5 3 4>;
