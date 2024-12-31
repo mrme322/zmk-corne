@@ -23,7 +23,7 @@
             bindings = <&kp ESCAPE>;
             key-positions = <3 2>;
             require-prior-idle-ms = <100>;
-            layers = <0 5 3 4>;
+            layers = <0>;
         };
 
         adjL {
