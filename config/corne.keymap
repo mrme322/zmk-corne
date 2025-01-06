@@ -98,14 +98,6 @@
             layers = <0>;
         };
 
-        delL {
-            bindings = <&kp DEL>;
-            key-positions = <16 17>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0 5 3 4>;
-        };
-
         miPc {
             bindings = <&kp LG(E)>;
             key-positions = <13 25>;
@@ -267,7 +259,7 @@
         winSC {
             bindings = <
 &none  &kp LC(LG(F4))  &kp LG(TAB)    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LC(LG(D))    &none  &none  &none  &none  &none  &none
-&none  &kp LC(A)       &kp LC(X)      &kp LC(C)         &kp LC(V)          &none            &none  &none  &none  &none  &none  &none
+&none  &kp LC(A)       &kp LC(X)      &kp LC(C)         &kp LC(V)          &kp DEL          &none  &none  &none  &none  &none  &none
 &none  &kp LC(Z)       &kp C_AC_HOME  &kp LG(LS(S))     &kp LG(D)          &kp LA(F4)       &none  &none  &none  &none  &none  &none
                                       &none             &none              &none            &none  &none  &none
             >;
