@@ -114,6 +114,14 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
+
+        quotes {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <8 9>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
     };
 
     behaviors {
