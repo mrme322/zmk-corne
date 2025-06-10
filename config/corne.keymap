@@ -19,7 +19,7 @@
         compatible = "zmk,combos";
 
         escL {
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             bindings = <&kp ESCAPE>;
             key-positions = <3 4>;
             require-prior-idle-ms = <100>;
@@ -27,7 +27,7 @@
         };
 
         adjL {
-            timeout-ms = <300>;
+            timeout-ms = <200>;
             bindings = <&mo 7>;
             key-positions = <5 1>;
             layers = <0>;
@@ -36,7 +36,7 @@
         backR {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
         };
@@ -44,7 +44,7 @@
         backL {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 15>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
         };
@@ -52,7 +52,7 @@
         questionR {
             bindings = <&kp QUESTION>;
             key-positions = <33 32>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
@@ -60,7 +60,7 @@
         wordDel {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <15 14>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
         };
@@ -68,7 +68,7 @@
         delR {
             bindings = <&kp DELETE>;
             key-positions = <31 32>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
         };
@@ -76,7 +76,7 @@
         wordDelR {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <20 21>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
         };
@@ -92,7 +92,7 @@
         delL {
             bindings = <&kp DELETE>;
             key-positions = <27 28>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
         };
@@ -118,7 +118,7 @@
         quotes {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <8 9>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
