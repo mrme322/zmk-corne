@@ -251,23 +251,23 @@
 &none  &kp Q            &kp W            &kp E                &kp R              &kp T                         &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
 &none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                         &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
 &none  &kp Z            &kp X            &kp C                &kp V              &kp B                         &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
-                                         &none                &lt 1 TAB          &stickShiftlt 2 LEFT_SHIFT    &lt 4 SPACE  &lt 5 RET          &none
+                                         &key_repeat          &lt 1 TAB          &stickShiftlt 2 LEFT_SHIFT    &lt 4 SPACE  &lt 5 RET          &kp LEFT_WIN
             >;
         };
 
         fn_mods {
             bindings = <
-&none  &none         &kp F1  &kp F2  &kp F3  &kp F10    &none  &none           &none      &none     &none         &none
-&none  &kp LEFT_GUI  &kp F4  &kp F5  &kp F6  &kp F11    &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
-&none  &key_repeat   &kp F7  &kp F8  &kp F9  &kp F12    &none  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
-                             &none   &none   &none      &none  &none           &none
+&none  &kp PG_UP        &kp F7  &kp F8  &kp F9  &kp F12    &none  &none           &none      &none     &none         &none
+&none  &kp LEFT_GUI     &kp F4  &kp F5  &kp F6  &kp F11    &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
+&none  &kp PRINTSCREEN  &kp F1  &kp F2  &kp F3  &kp F10    &none  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
+                                &none   &none   &none      &none  &none           &none
             >;
         };
 
         winSC {
             bindings = <
 &none  &kp LC(LG(F4))  &kp LG(TAB)    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LC(LG(D))    &none  &none  &none  &none  &none  &none
-&none  &kp LC(A)       &kp LC(X)      &kp LC(C)         &kp LC(V)          &none            &none  &none  &none  &none  &none  &none
+&none  &kp LC(A)       &kp LC(X)      &kp LC(C)         &kp LC(V)          &kp LG(E)        &none  &none  &none  &none  &none  &none
 &none  &kp LC(Z)       &kp C_AC_HOME  &kp LG(LS(S))     &kp LG(D)          &kp LA(F4)       &none  &none  &none  &none  &none  &none
                                       &none             &none              &none            &none  &none  &none
             >;
@@ -284,10 +284,10 @@
 
         num {
             bindings = <
-&none  &none         &none     &none      &none           &none    &kp PLUS   &kp N7      &kp N8  &kp N9  &kp STAR   &none
-&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp MINUS  &kp N4      &kp N5  &kp N6  &kp SLASH  &none
-&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT  &none    &kp N0     &kp N1      &kp N2  &kp N3  &kp EQUAL  &none
-                               &none      &none           &none    &none      &kp PERIOD  &none
+&none  &none         &none     &none      &none           &none    &kp PLUS   &kp N7      &kp N8     &kp N9  &kp STAR   &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp MINUS  &kp N4      &kp N5     &kp N6  &kp SLASH  &none
+&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT  &none    &kp N0     &kp N1      &kp N2     &kp N3  &kp EQUAL  &none
+                               &none      &none           &none    &none      &kp PERIOD  &kp ENTER
             >;
         };
 
@@ -295,7 +295,7 @@
             bindings = <
 &none  &none         &none     &none      &none           &none    &kp C_VOL_UP  &kp PG_UP   &kp UP      &kp PG_DN   &kp C_MUTE  &none
 &none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp HOME      &kp LEFT    &kp DOWN    &kp RIGHT   &kp END     &none
-&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT  &none    &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp CAPS    &none
+&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT  &none    &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_MENU  &none
                                &none      &none           &none    &none         &none       &none
             >;
         };
