@@ -133,7 +133,7 @@
 
         scrollLayer {
             bindings = <&mo 8>;
-            key-positions = <15 20>;
+            key-positions = <36 41>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
