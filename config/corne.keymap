@@ -348,7 +348,7 @@
 &trans  &kp UP    &kp UP    &kp UP    &kp UP    &trans       &trans     &kp UP     &kp UP     &kp UP     &kp UP     &trans
 &trans  &kp LEFT  &kp LEFT  &kp LEFT  &kp LEFT  &kp RSHFT    &kp RSHFT  &kp RIGHT  &kp RIGHT  &kp RIGHT  &kp RIGHT  &trans
 &trans  &kp DOWN  &kp DOWN  &kp DOWN  &kp DOWN  &trans       &trans     &kp DOWN   &kp DOWN   &kp DOWN   &kp DOWN   &trans
-                            &trans    &trans    &trans       &trans     &trans     &trans
+                            &mo 8     &trans    &trans       &trans     &trans     &mo 8
             >;
         };
     };
