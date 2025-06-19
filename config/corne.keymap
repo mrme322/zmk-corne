@@ -130,15 +130,6 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
-
-        scrollLayer {
-            bindings = <&mo 8>;
-            key-positions = <36 41>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -340,15 +331,6 @@
 &none  &none  &none  &none  &none  &none          &none         &kp C_BRI_UP  &kp C_BRI_DEC  &none         &bt BT_CLR      &none
 &none  &none  &none  &none  &none  &none          &none         &none         &none          &none         &studio_unlock  &none
                      &none  &none  &bootloader    &bootloader   &out OUT_TOG  &none
-            >;
-        };
-
-        scroll {
-            bindings = <
-&trans  &kp UP    &kp UP    &kp UP    &kp UP    &trans       &trans     &kp UP     &kp UP     &kp UP     &kp UP     &trans
-&trans  &kp LEFT  &kp LEFT  &kp LEFT  &kp LEFT  &kp RSHFT    &kp RSHFT  &kp RIGHT  &kp RIGHT  &kp RIGHT  &kp RIGHT  &trans
-&trans  &kp DOWN  &kp DOWN  &kp DOWN  &kp DOWN  &trans       &trans     &kp DOWN   &kp DOWN   &kp DOWN   &kp DOWN   &trans
-                            &mo 8     &trans    &trans       &trans     &trans     &mo 8
             >;
         };
     };
