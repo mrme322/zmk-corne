@@ -28,7 +28,7 @@
 
         adjL {
             timeout-ms = <200>;
-            bindings = <&mo 7>;
+            bindings = <&mo 8>;
             key-positions = <5 1>;
             layers = <0>;
         };
@@ -38,7 +38,7 @@
             key-positions = <19 20>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 5 7 6>;
         };
 
         backL {
@@ -46,7 +46,7 @@
             key-positions = <16 15>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 5 7 6>;
         };
 
         questionR {
@@ -62,7 +62,7 @@
             key-positions = <15 14>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 5 7 6>;
         };
 
         delR {
@@ -70,7 +70,7 @@
             key-positions = <31 32>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 5 7 6>;
         };
 
         wordDelR {
@@ -78,7 +78,7 @@
             key-positions = <20 21>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 5 7 6>;
         };
 
         capsWord {
@@ -94,11 +94,11 @@
             key-positions = <27 28>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 5 7 6>;
         };
 
         toSym {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <37 40>;
             timeout-ms = <50>;
             slow-release;
@@ -107,7 +107,7 @@
         };
 
         toIpadSC {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <38 39>;
             timeout-ms = <50>;
             slow-release;
@@ -183,79 +183,12 @@
             flavor = "balanced";
             retro-tap;
         };
-    };
 
-    macros {
-        minimize: minimize {
-            compatible = "zmk,behavior-macro";
+        tap1: tap1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP1";
             #binding-cells = <0>;
-            bindings = <&kp LA(SPACE)>, <&macro_wait_time 200>, <&kp N>;
-
-            label = "MINIMIZE";
-        };
-
-        dt1: dt1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>;
-
-            label = "DT1";
-        };
-
-        dt2: dt2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>;
-
-            label = "DT2";
-        };
-
-        dt3: dt3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>;
-
-            label = "DT3";
-        };
-
-        dt4: dt4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>;
-
-            label = "DT4";
+            bindings = <&stickShiftlt 1 LEFT_SHIFT>, <&mo 2>;
         };
     };
 
@@ -264,19 +197,10 @@
 
         L0 {
             bindings = <
-&none  &kp Q            &kp W            &kp E                &kp R              &kp T                         &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
-&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                         &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
-&none  &kp Z            &kp X            &kp C                &kp V              &kp B                         &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
-                                         &key_repeat          &lt 1 TAB          &stickShiftlt 2 LEFT_SHIFT    &lt 4 SPACE  &lt 5 RET          &kp LEFT_WIN
-            >;
-        };
-
-        fn_mods {
-            bindings = <
-&none  &kp HOME         &kp F7  &kp F8  &kp F9  &kp F12    &none  &none           &none      &none     &none         &none
-&none  &kp LEFT_GUI     &kp F4  &kp F5  &kp F6  &kp F11    &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
-&none  &kp PRINTSCREEN  &kp F1  &kp F2  &kp F3  &kp F10    &none  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
-                                &none   &none   &none      &none  &none           &none
+&none  &kp Q            &kp W            &kp E                &kp R              &kp T    &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
+&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G    &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
+&none  &kp Z            &kp X            &kp C                &kp V              &kp B    &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
+                                         &key_repeat          &lt 3 TAB          &tap1    &lt 5 SPACE  &lt 6 RET          &kp LEFT_WIN
             >;
         };
 
@@ -286,6 +210,24 @@
 &none  &kp LC(A)       &kp LC(X)      &kp LC(C)         &kp LC(V)          &kp LG(E)        &none  &none  &none  &none  &none  &none
 &none  &kp LC(Z)       &kp C_AC_HOME  &kp LG(LS(S))     &kp LG(D)          &kp LA(F4)       &none  &none  &none  &none  &none  &none
                                       &none             &none              &none            &none  &none  &none
+            >;
+        };
+
+        mouseTest {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp L   &kp U   &kp I   &kp S   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &to 0   &trans  &trans
+            >;
+        };
+
+        fn_mods {
+            bindings = <
+&none  &kp HOME         &kp F7  &kp F8  &kp F9  &kp F12    &none  &none           &none      &none     &none         &none
+&none  &kp LEFT_GUI     &kp F4  &kp F5  &kp F6  &kp F11    &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
+&none  &kp PRINTSCREEN  &kp F1  &kp F2  &kp F3  &kp F10    &none  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
+                                &none   &none   &none      &none  &none           &none
             >;
         };
 
