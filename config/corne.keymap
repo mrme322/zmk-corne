@@ -188,7 +188,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP1";
             #binding-cells = <0>;
-            bindings = <&stickShiftlt 1 LEFT_SHIFT>, <&mo 2>;
+            bindings = <&stickShiftlt 1 LEFT_SHIFT>, <&to 2>;
         };
     };
 
