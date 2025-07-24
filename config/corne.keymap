@@ -174,31 +174,13 @@
             hold-while-undecided;
         };
 
-        keyrepeatMo: keyrepeatMo {
-            compatible = "zmk,behavior-hold-tap";
-            label = "KEYREPEATMO";
-            bindings = <&mo>, <&key_repeat>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            retro-tap;
-        };
-
-        tap1: tap1 {
+        momTap: momTap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP1";
+            label = "MOMTAP";
             #binding-cells = <0>;
             bindings = <&stickShiftlt 1 LEFT_SHIFT>, <&to 2>;
 
             tapping-term-ms = <350>;
-        };
-
-        taptest: taptest {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPTEST";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_1>, <&kp NUMBER_2>, <&kp NUMBER_3>;
         };
     };
 
@@ -207,10 +189,10 @@
 
         L0 {
             bindings = <
-&none  &kp Q            &kp W            &kp E                &kp R              &kp T    &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
-&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G    &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
-&none  &taptest         &to 2            &kp C                &kp V              &kp B    &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
-                                         &key_repeat          &lt 3 TAB          &tap1    &lt 5 SPACE  &lt 6 RET          &kp LEFT_WIN
+&none  &kp Q            &kp W            &kp E                &kp R              &kp T      &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
+&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G      &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
+&none  &kp Z            &kp X            &kp C                &kp V              &kp B      &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
+                                         &key_repeat          &lt 3 TAB          &momTap    &lt 5 SPACE  &lt 6 RET          &kp LEFT_WIN
             >;
         };
 
@@ -223,12 +205,12 @@
             >;
         };
 
-        mouseTest {
+        momCustomLayer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp L   &kp U   &kp I   &kp S   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &to 0   &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &kp L  &kp U  &kp I  &kp S  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &to 0  &none  &none
             >;
         };
 
