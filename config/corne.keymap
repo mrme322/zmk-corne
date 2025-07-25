@@ -270,14 +270,5 @@
                      &none  &none  &bootloader    &bootloader   &out OUT_TOG  &none
             >;
         };
-
-        forLaterTesting {
-            bindings = <
-&trans  &trans        &trans    &kp UP     &kp ENTER  &kp ESC     &kp ESC   &kp LS(QMARK)  &kp UP     &kp SQT    &trans        &trans
-&trans  &kp LC(BSPC)  &kp LEFT  &kp DOWN   &kp RIGHT  &kp BSPC    &kp BSPC  &kp LEFT       &kp DOWN   &kp RIGHT  &kp LC(BSPC)  &trans
-&trans  &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHFT  &kp DEL     &kp DEL   &kp LSHFT      &kp LCTRL  &kp LALT   &kp LEFT_WIN  &trans
-                                &trans     &trans     &trans      &trans    &trans         &trans
-            >;
-        };
     };
 };
