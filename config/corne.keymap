@@ -17,6 +17,8 @@
     release-after-ms = <1500>;
 };
 
+&lt { retro-tap; };
+
 / {
     combos {
         compatible = "zmk,combos";
