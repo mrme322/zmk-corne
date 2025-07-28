@@ -132,6 +132,13 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
+
+        noHMR {
+            bindings = <&tog 0>;
+            key-positions = <25 29>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
     };
 
     behaviors {
