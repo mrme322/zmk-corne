@@ -204,7 +204,7 @@
             bindings = <
 &none  &none         &none     &none      &none      &none    &none  &none      &none      &none     &none         &none
 &none  &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LEFT_WIN  &none
-&none  &sk LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &sk LEFT_WIN  &none
+&none  &sk LEFT_WIN  &sk LALT  &sk LCTRL  &sk LSHFT  &none    &none  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LEFT_WIN  &none
                                &none      &none      &none    &none  &none      &none
             >;
         };
