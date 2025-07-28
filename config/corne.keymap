@@ -30,7 +30,7 @@
 
         adjL {
             timeout-ms = <200>;
-            bindings = <&mo 7>;
+            bindings = <&mo 8>;
             key-positions = <5 1>;
         };
 
@@ -60,7 +60,7 @@
             key-positions = <15 14>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <4 6 5>;
+            layers = <5 7 6>;
         };
 
         delR {
@@ -92,7 +92,7 @@
         };
 
         toSym {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <37 40>;
             timeout-ms = <50>;
             slow-release;
@@ -100,7 +100,7 @@
         };
 
         toIpadSC {
-            bindings = <&mo 3>;
+            bindings = <&mo 5>;
             key-positions = <38 39>;
             timeout-ms = <50>;
             slow-release;
@@ -122,14 +122,14 @@
         };
 
         Rhand {
-            bindings = <&mo 9>;
+            bindings = <&mo 1>;
             key-positions = <38 16>;
             timeout-ms = <200>;
             slow-release;
         };
 
         LHand {
-            bindings = <&mo 9>;
+            bindings = <&mo 1>;
             key-positions = <19 39>;
             timeout-ms = <200>;
             slow-release;
@@ -182,7 +182,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMB";
             #binding-cells = <0>;
-            bindings = <&stickShiftlt 1 LEFT_SHIFT>, <&lt 0 LEFT_WIN>;
+            bindings = <&stickShiftlt 4 LEFT_SHIFT>, <&lt 0 LEFT_WIN>;
 
             tapping-term-ms = <350>;
         };
@@ -196,25 +196,34 @@
 &none  &kp Q  &kp W  &kp E  &kp R      &kp T                         &kp Y        &kp U      &kp I      &kp O    &kp P      &none
 &none  &kp A  &kp S  &kp D  &kp F      &kp G                         &kp H        &kp J      &kp K      &kp L    &kp SEMI   &none
 &none  &kp Z  &kp X  &kp C  &kp V      &kp B                         &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH  &none
-                     &none  &lt 2 TAB  &stickShiftlt 1 LEFT_SHIFT    &lt 4 SPACE  &lt 5 RET  &none
+                     &none  &lt 2 TAB  &stickShiftlt 4 LEFT_SHIFT    &lt 5 SPACE  &lt 6 RET  &none
             >;
         };
 
-        winSC {
+        singleHandMods {
             bindings = <
-&none  &kp LC(LG(F4))  &kp LG(TAB)    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LC(LG(D))    &none  &none      &none      &none     &none         &none
-&none  &kp LC(A)       &kp LC(X)      &kp LC(C)         &kp LC(V)          &kp LG(E)        &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LEFT_WIN  &none
-&none  &kp LC(Z)       &kp C_AC_HOME  &kp LG(LS(S))     &kp LG(D)          &kp LA(F4)       &none  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LEFT_WIN  &none
-                                      &none             &none              &none            &none  &none      &none
+&none  &none         &none     &none      &none      &none    &none  &none      &none      &none     &none         &none
+&none  &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LEFT_WIN  &none
+&none  &sk LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &sk LEFT_WIN  &none
+                               &none      &none      &none    &none  &none      &none
             >;
         };
 
         fn_mods {
             bindings = <
-&none  &kp HOME       &kp F7  &kp F8  &kp F9  &kp F12    &none            &none           &none      &none     &none         &none
-&none  &kp LS(LC(H))  &kp F4  &kp F5  &kp F6  &kp F11    &kp PRINTSCREEN  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
-&none  &key_repeat    &kp F1  &kp F2  &kp F3  &kp F10    &kp CAPS         &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
-                              &none   &none   &none      &none            &none           &none
+&none  &kp HOME     &kp F7  &kp F8  &kp F9  &kp F12    &none            &none           &none      &none     &none         &none
+&none  &kp END      &kp F4  &kp F5  &kp F6  &kp F11    &kp PRINTSCREEN  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
+&none  &key_repeat  &kp F1  &kp F2  &kp F3  &kp F10    &kp CAPS         &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
+                            &none   &none   &none      &none            &none           &none
+            >;
+        };
+
+        winSC {
+            bindings = <
+&none  &kp LC(LG(F4))  &kp LG(TAB)    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LC(LG(D))    &none  &none  &none  &none  &none  &none
+&none  &kp LC(A)       &kp LC(X)      &kp LC(C)         &kp LC(V)          &kp LG(E)        &none  &none  &none  &none  &none  &none
+&none  &kp LC(Z)       &kp C_AC_HOME  &kp LG(LS(S))     &kp LG(D)          &kp LA(F4)       &none  &none  &none  &none  &none  &none
+                                      &none             &none              &none            &none  &none  &none
             >;
         };
 
@@ -229,10 +238,10 @@
 
         num {
             bindings = <
-&none  &none         &none     &none      &none           &none    &kp PLUS   &kp N7      &kp N8     &kp N9  &kp STAR   &none
-&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp MINUS  &kp N4      &kp N5     &kp N6  &kp SLASH  &none
-&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT  &none    &kp N0     &kp N1      &kp N2     &kp N3  &kp EQUAL  &none
-                               &none      &none           &none    &none      &kp PERIOD  &kp ENTER
+&none  &none  &none  &none  &none  &none    &kp PLUS   &kp N7      &kp N8     &kp N9  &kp STAR   &none
+&none  &none  &none  &none  &none  &none    &kp MINUS  &kp N4      &kp N5     &kp N6  &kp SLASH  &none
+&none  &none  &none  &none  &none  &none    &kp N0     &kp N1      &kp N2     &kp N3  &kp EQUAL  &none
+                     &none  &none  &none    &none      &kp PERIOD  &kp ENTER
             >;
         };
 
@@ -268,16 +277,7 @@
 &none  &kp Q            &kp W            &kp E                &kp R              &kp T      &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
 &none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G      &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
 &none  &kp Z            &kp X            &kp C                &kp V              &kp B      &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
-                                         &none                &lt 2 TAB          &LTHUMB    &lt 4 SPACE  &lt 5 RET          &none
-            >;
-        };
-
-        singleHandMods {
-            bindings = <
-&none  &none         &none     &none      &none      &none    &none  &none      &none      &none     &none         &none
-&none  &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LEFT_WIN  &none
-&none  &sk LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &sk LEFT_WIN  &none
-                               &none      &none      &none    &none  &none      &none
+                                         &none                &lt 2 TAB          &LTHUMB    &lt 5 SPACE  &lt 6 RET          &none
             >;
         };
     };
