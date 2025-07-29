@@ -13,7 +13,7 @@
 
 &sk {
     quick-release;
-    release-after-ms = <1500>;
+    release-after-ms = <800>;
     lazy;
 };
 
