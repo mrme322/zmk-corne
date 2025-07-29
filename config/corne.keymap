@@ -17,6 +17,8 @@
     lazy;
 };
 
+&lt { retro-tap; };
+
 / {
     combos {
         compatible = "zmk,combos";
