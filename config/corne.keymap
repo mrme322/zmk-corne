@@ -173,7 +173,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             retro-tap;
             hold-while-undecided;
             require-prior-idle-ms = <150>;
