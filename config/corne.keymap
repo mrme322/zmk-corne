@@ -17,10 +17,7 @@
     lazy;
 };
 
-&lt {
-    retro-tap;
-    require-prior-idle-ms = <40>;
-};
+&lt { require-prior-idle-ms = <80>; };
 
 / {
     combos {
