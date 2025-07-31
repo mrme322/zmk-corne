@@ -10,6 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &sk {
     quick-release;
@@ -187,7 +188,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMB";
             #binding-cells = <0>;
-            bindings = <&stickShiftlt 4 LEFT_SHIFT>, <&lt 0 LEFT_WIN>;
+            bindings = <&stickShiftlt 3 LEFT_SHIFT>, <&lt 9 LEFT_WIN>;
 
             tapping-term-ms = <380>;
         };
@@ -279,10 +280,10 @@
 
         mouseLayer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &mkp MB1  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans    &trans  &trans  &trans
             >;
         };
     };
