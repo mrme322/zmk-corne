@@ -234,8 +234,8 @@
         fn_mods {
             bindings = <
 &none  &kp HOME     &kp F7  &kp F8  &kp F9  &kp F12    &none            &none           &none      &none     &none         &none
-&none  &kp END      &kp F4  &kp F5  &kp F6  &kp F11    &kp PRINTSCREEN  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
-&none  &key_repeat  &kp F1  &kp F2  &kp F3  &kp F10    &kp CAPS         &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
+&none  &kp END      &kp F4  &kp F5  &kp F6  &kp F11    &kp PRINTSCREEN  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
+&none  &key_repeat  &kp F1  &kp F2  &kp F3  &kp F10    &kp CAPS         &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
                             &none   &none   &none      &none            &none           &none
             >;
         };
@@ -261,8 +261,8 @@
         num {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp PLUS   &kp N7      &kp N8  &kp N9  &kp STAR   &none
-&none  &none  &none  &none  &none  &none    &kp MINUS  &kp N4      &kp N5  &kp N6  &kp SLASH  &none
-&none  &none  &none  &none  &none  &none    &kp N0     &kp N1      &kp N2  &kp N3  &kp EQUAL  &none
+&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT  &none    &kp MINUS  &kp N4      &kp N5  &kp N6  &kp SLASH  &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp N0     &kp N1      &kp N2  &kp N3  &kp EQUAL  &none
                      &none  &none  &none    &none      &kp PERIOD  &none
             >;
         };
@@ -270,8 +270,8 @@
         nav-media {
             bindings = <
 &none  &none         &none     &none      &none           &none    &kp C_VOL_UP  &kp PG_UP   &kp UP      &kp PG_DN   &kp C_MUTE          &none
-&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp HOME      &kp LEFT    &kp DOWN    &kp RIGHT   &kp END             &none
-&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT  &none    &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp K_CONTEXT_MENU  &none
+&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT  &none    &kp HOME      &kp LEFT    &kp DOWN    &kp RIGHT   &kp END             &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp K_CONTEXT_MENU  &none
                                &none      &none           &none    &none         &none       &none
             >;
         };
@@ -279,7 +279,7 @@
         symb {
             bindings = <
 &none  &kp EXCL      &kp AT    &kp HASH       &kp DLLR          &kp PERCENT          &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE  &kp STAR   &none
-&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT    &none                &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER  &kp SLASH  &none
+&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL      &sk LEFT_SHIFT    &none                &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER  &kp SLASH  &none
 &none  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE  &kp EQUAL  &none
                                &none          &none             &none                &none      &none                 &none
             >;
