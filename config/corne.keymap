@@ -143,8 +143,8 @@
 
         toMouse {
             bindings = <&to 9>;
-            key-positions = <14 15 16>;
-            timeout-ms = <150>;
+            key-positions = <14 15 16 37>;
+            timeout-ms = <180>;
             slow-release;
             require-prior-idle-ms = <80>;
         };
@@ -152,7 +152,7 @@
         moMouse {
             bindings = <&mo 9>;
             key-positions = <14 15 16 38>;
-            timeout-ms = <150>;
+            timeout-ms = <180>;
             slow-release;
             require-prior-idle-ms = <80>;
         };
@@ -204,7 +204,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMB";
             #binding-cells = <0>;
-            bindings = <&stickShiftlt 3 LEFT_SHIFT>, <&lt 9 LEFT_WIN>;
+            bindings = <&stickShiftlt 3 LEFT_SHIFT>, <&lt 4 LEFT_WIN>;
 
             tapping-term-ms = <380>;
         };
