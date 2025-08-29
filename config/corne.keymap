@@ -213,6 +213,8 @@
             label = "LTHUMB";
             #binding-cells = <0>;
             bindings = <&stickShiftlt 3 LEFT_SHIFT>, <&kp LEFT_WIN>;
+
+            tapping-term-ms = <300>;
         };
     };
 
