@@ -158,14 +158,6 @@
             slow-release;
             require-prior-idle-ms = <80>;
         };
-
-        toScroll {
-            bindings = <&mo 11>;
-            key-positions = <38 28 27 26>;
-            timeout-ms = <180>;
-            slow-release;
-            require-prior-idle-ms = <80>;
-        };
     };
 
     behaviors {
@@ -309,15 +301,6 @@
 &none  &kp LS(LC(TAB))  &kp LEFT        &kp DOWN    &kp RIGHT   &kp LC(TAB)        &none  &none  &none  &none  &none  &none
 &none  &kp LEFT_SHIFT   &kp C_PREVIOUS  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN       &none  &none  &none  &none  &none  &none
                                         &none       &none       &none              &none  &none  &none
-            >;
-        };
-
-        scroll {
-            bindings = <
-&none  &kp UP    &kp UP    &kp UP    &kp UP          &none        &none  &none  &none  &none  &none  &none
-&none  &kp LEFT  &kp LEFT  &kp LEFT  &kp RIGHT       &kp RIGHT    &none  &none  &none  &none  &none  &none
-&none  &kp DOWN  &kp DOWN  &kp DOWN  &kp DOWN        &none        &none  &none  &none  &none  &none  &none
-                           &none     &kt LEFT_SHIFT  &none        &none  &none  &none
             >;
         };
     };
