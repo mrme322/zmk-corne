@@ -143,13 +143,6 @@
             require-prior-idle-ms = <80>;
         };
 
-        toIpad {
-            bindings = <&mo 4>;
-            key-positions = <39 38>;
-            timeout-ms = <50>;
-            slow-release;
-        };
-
         toLeftNav-Media {
             bindings = <&mo 10>;
             key-positions = <38 2 3 4>;
