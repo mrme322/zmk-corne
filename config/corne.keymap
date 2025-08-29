@@ -165,22 +165,6 @@
             slow-release;
             require-prior-idle-ms = <80>;
         };
-
-        leftWin {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <38 15 16>;
-            timeout-ms = <180>;
-            slow-release;
-            require-prior-idle-ms = <80>;
-        };
-
-        rightWin {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <20 39 19>;
-            timeout-ms = <180>;
-            slow-release;
-            require-prior-idle-ms = <80>;
-        };
     };
 
     behaviors {
