@@ -165,6 +165,22 @@
             slow-release;
             require-prior-idle-ms = <80>;
         };
+
+        leftWin {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <38 15 16>;
+            timeout-ms = <180>;
+            slow-release;
+            require-prior-idle-ms = <80>;
+        };
+
+        rightWin {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <20 39 19>;
+            timeout-ms = <180>;
+            slow-release;
+            require-prior-idle-ms = <80>;
+        };
     };
 
     behaviors {
@@ -207,15 +223,6 @@
             flavor = "balanced";
             hold-while-undecided;
         };
-
-        LTHUMB: LTHUMB {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LTHUMB";
-            #binding-cells = <0>;
-            bindings = <&stickShiftlt 3 LEFT_SHIFT>, <&kp LEFT_WIN>;
-
-            tapping-term-ms = <300>;
-        };
     };
 
     keymap {
@@ -223,10 +230,10 @@
 
         L0 {
             bindings = <
-&none  &kp Q            &kp W            &kp E                &kp R              &kp T      &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
-&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G      &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
-&none  &kp Z            &kp X            &kp C                &kp V              &kp B      &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
-                                         &none                &lt 2 TAB          &LTHUMB    &lt 5 SPACE  &lt 6 RET          &none
+&none  &kp Q            &kp W            &kp E                &kp R              &kp T                         &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
+&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                         &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
+&none  &kp Z            &kp X            &kp C                &kp V              &kp B                         &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
+                                         &none                &lt 2 TAB          &stickShiftlt 3 LEFT_SHIFT    &lt 5 SPACE  &lt 6 RET          &none
             >;
         };
 
