@@ -158,7 +158,7 @@
         };
 
         toAdj {
-            bindings = <&mo 10>;
+            bindings = <&mo 8>;
             key-positions = <38 13 14 15 16>;
             timeout-ms = <180>;
             slow-release;
